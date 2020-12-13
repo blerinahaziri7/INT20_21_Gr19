@@ -184,3 +184,113 @@ footer{
 .socials a:hover{
     color: gray;
 }
+
+/* Slideshow CSS Begin */
+
+.homepage-projects{
+    background: #e6ecec;
+  }
+  
+  .slider-title{
+    text-align: center;
+    padding: 15px 0 30px;
+  }
+  
+  #slider-heading{
+    font-size:37px;
+  }
+  
+  #slider-subheading{
+    font-size:20px;
+    padding-top:10px;
+  }
+  
+  .entire-slider{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+    
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  .navigation-manual{
+    width: 800px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 4px solid #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #ffffff;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  .slider-btn{
+    padding: 20px 0 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .projects-btn{
+    font-size: 18px;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+
+  /* Slideshow CSS End */
