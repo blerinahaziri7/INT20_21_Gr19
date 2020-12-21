@@ -294,3 +294,26 @@ footer{
   }
 
   /* Slideshow CSS End */
+
+  
+  #eraMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: powderblue;
+    
+  }
+  .img_A{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    margin-top: 15px;
+  }
+  .arch{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
