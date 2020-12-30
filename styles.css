@@ -293,15 +293,12 @@ footer{
     border-radius: 8px;
     outline: 0;
     cursor: pointer;
-<<<<<<< Updated upstream
-=======
     transition: 0.5s ease 0s;
   }
 
   .projects-btn:hover{
     background-color: black;
     color: white;
->>>>>>> Stashed changes
   }
 
   /* Slideshow CSS End */
