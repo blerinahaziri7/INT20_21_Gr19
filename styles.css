@@ -9,6 +9,7 @@
 
 html {
     height: 100%;
+    scroll-behavior: smooth
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -16,8 +17,10 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    
 } 
 
+/* -------------------------- Header Start ---------------------------- */
 header{
     display: flex;
     width: 100%;
@@ -25,7 +28,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    background: black;
+    background: rgba(0,0,0,0.85);
 }
 
 .logo-container, .nav_links, .search-box, .search-bar {
@@ -135,12 +138,153 @@ input {font-family: 'Poppins', sans-serif;}
     outline: 0;
     fill: white;
 }
+/* -------------------------- Header Ending ---------------------------- */
 
+/* ------------------------ Hero-Banner Section Start ------------------ */
 #banner-section{
     position: relative;
     height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    background-color: black;
 }
 
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    z-index: -1;
+    opacity: 0; 
+    animation: cycleImages 31s infinite; 
+}
+
+.slideshow-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 31s infinite; 
+    filter: blur(0.2rem);
+}
+
+.slideshow-item:nth-child(1), .slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2), .slideshow-item:nth-child(2) img{
+    animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3), .slideshow-item:nth-child(3) img{
+    animation-delay: 20s;
+}
+
+@keyframes cycleImages {
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+.title, .message {
+    color: white;
+}
+
+.hero-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.more-btn{
+padding: 1rem 2.5rem;
+border: 2px solid rgba(255,255,255,1);
+border-radius: 2.5rem;
+background: rgba(0,0,0,0.85);
+transition: 0.3s ease 0s;
+}
+
+.more-btn:hover{
+    background: black;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content{
+    max-width: 40rem;
+    margin-left: 100px;
+}
+
+.hero-content a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.message{
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.cards{
+    margin-left: 150px;
+    animation: hue 10s infinite reverse;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 20px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 20px black;
+}
+
+.card:hover{
+    transform: translateY(-10px)
+}
+
+.card1{
+    background-image: url(./images/discover.jpg);
+}
+
+.card2{
+    background-image: url(./images/inspire.jpg);
+}
+
+.card h4{
+    color: white;
+    text-shadow:  0 0 5px #999;
+}
+
+.card p {
+    color: white;
+    text-shadow: 0 0 15px #000;
+    font-size: 9px;
+}
+/* ------------------------ Hero-Banner Section Ending ------------------ */
+
+/* ------------------------ Footer Start ------------------ */
 footer{
     background: black;
     height: 300px;
@@ -184,16 +328,17 @@ footer{
 .socials a:hover{
     color: gray;
 }
+/* ------------------------ Footer ending ------------------ */
 
-/* Slideshow CSS Begin */
-
+/* ------------------------ Home-Projects Section Start ------------------ */
 .homepage-projects{
-    background: #e6ecec;
+    background: transparent;
   }
   
   .slider-title{
     text-align: center;
     padding: 15px 0 30px;
+    background: transparent;
   }
   
   #slider-heading{
@@ -210,6 +355,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
   }
    
   .slider{
@@ -299,6 +445,6 @@ footer{
   .projects-btn:hover{
     background-color: black;
     color: white;
-  }
 
-  /* Slideshow CSS End */
+  }
+/* ------------------------ Home-Projects Section Ending ------------------ */
