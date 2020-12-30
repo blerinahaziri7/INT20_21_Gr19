@@ -1,5 +1,5 @@
 body{
-    background: url(images/try1.jpg)
+    background: url(images/try2.jpg)
     no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -8,9 +8,7 @@ body{
 }
  
    .a1, .a2, .a3, .a4, .a5, .a6{
-     
- 
-     border-top-color: saddlebrown;
+    border-top-color: #FFD700;
      border-top-style:solid;
      border-width: 2px;
      /* border-bottom-color: saddlebrown;
@@ -23,18 +21,21 @@ body{
      padding-top: 40px;
    }
  
-   .a6 {
-     border-bottom-color: saddlebrown;
+   .a6  {
+     border-bottom-color:#FFD700;
      border-bottom-style:solid;
    }
  
    .architect1, .architect2,  .architect3,  .architect4, .architect5, .architect6{
      text-align: center;
-     color:silver;
-     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+     font-family:  'Nanum Myeongjo';
      text-decoration: none;
-     font-size: x-large;
+     font-size: 40px;
+     color:#e4cb41 ;
      margin-top: 20px;
    }
  
+   
+   
    
