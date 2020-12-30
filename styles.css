@@ -297,36 +297,5 @@ footer{
 
   /* Slideshow CSS End */
 
-  .a1, .a2, .a3, .a4, .a5, .a6{
-    
-
-    border-top-color: saddlebrown;
-    border-top-style:solid;
-    border-width: 2px;
-    /* border-bottom-color: saddlebrown;
-    border-bottom-style:solid; */
-    /* margin-bottom: 60px;
-    margin-top: 60px; */
-    margin-left: 120px;
-    margin-right: 120px;
-    height: 160px;
-    padding-top: 40px;
-  }
-
-  .a6 {
-    border-bottom-color: saddlebrown;
-    border-bottom-style:solid;
-  }
-
-  .architect1, .architect2,  .architect3,  .architect4, .architect5, .architect6{
-    text-align: center;
-    color:silver;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: x-large;
-    margin-top: 20px;
-  }
-
-  
 
   
