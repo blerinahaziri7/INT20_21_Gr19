@@ -138,74 +138,35 @@ input {font-family: 'Poppins', sans-serif;}
 
 #banner-section{
     position: relative;
-    height: 100vh;
+}
+/* Navbar CSS End */
+
+#blurry-background{
+  background-image: url("images/ProjectsIntro.png");
+  width: 100%;
+  height: 700px;
+  filter: brightness(70%) blur(4px);     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
-footer{
-    background: black;
-    height: 300px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    padding-top: 30px;
-    color: white;
-    margin-top: auto;
+.centered-background-text{
+  background-color: rgba(0,0,0, 0.5); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 40px;
+  text-align: center;
 }
 
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-}
-
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.socials li {
-    margin: 0 10px;
-}
-
-.socials a:hover{
-    color: gray;
-}
-
-/* Slideshow CSS Begin */
-
-.homepage-projects{
-    background: #e6ecec;
-  }
-  
-  .slider-title{
-    text-align: center;
-    padding: 15px 0 30px;
-  }
-  
-  #slider-heading{
-    font-size:37px;
-  }
-  
-  #slider-subheading{
-    font-size:20px;
-    padding-top:10px;
-  }
-  
-  .entire-slider{
+/* Slider CSS Begin */
+.entire-slider{
     height: 500px;
     display: flex;
     justify-content: center;
@@ -283,22 +244,50 @@ footer{
     display: flex;
     justify-content: center;
   }
-  
-  .projects-btn{
-    font-size: 18px;
-    width: 130px;
-    height: 35px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    border-radius: 8px;
-    outline: 0;
-    cursor: pointer;
-    transition: 0.5s ease 0s;
-  }
+/* Slider CSS End */
 
-  .projects-btn:hover{
-    background-color: black;
+/* Footer CSS Begin */
+footer{
+    background: black;
+    height: 300px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    padding-top: 30px;
     color: white;
-  }
+    margin-top: auto;
+}
 
-  /* Slideshow CSS End */
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a:hover{
+    color: gray;
+}
+/* Footer CSS End */
