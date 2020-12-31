@@ -1,14 +1,15 @@
+
 body{
-    background: url(images/try2.jpg)
+    background: url(images/background.jpg)
     no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
- 
+
    .a1, .a2, .a3, .a4, .a5, .a6{
-    border-top-color: #FFD700;
+    border-top-color:#bf8300;
      border-top-style:solid;
      border-width: 2px;
      /* border-bottom-color: saddlebrown;
@@ -22,19 +23,97 @@ body{
    }
  
    .a6  {
-     border-bottom-color:#FFD700;
+     border-bottom-color:#bf8300;
      border-bottom-style:solid;
    }
  
    .architect1, .architect2,  .architect3,  .architect4, .architect5, .architect6{
      text-align: center;
-    font-style: italic;
+     font-style: italic;
      font-family:  'Nanum Myeongjo';
      text-decoration: none;
      font-size: 40px;
-     color:#e4cb41 ;
+     color: #62572a ;
      margin-top: 20px;
    }
+
+   #clientsId  .a1 .architect1:hover{
+      width: 300px;
+      height: 300px;
+      background-size: 100%;
+      background-size: cover;
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: center ;
+      position: relative;
+      margin: auto;
+      background-image: url(images/elsa_koshi.jpg);
+   }
+
+   #clientsId  .a2 .architect2:hover{
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    background-size: cover;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    position: relative;
+    margin: auto;
+    background-image: url(images/elsa_koshi.jpg);
+ }
+
+ #clientsId  .a3 .architect3:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/elsa_koshi.jpg);
+}
+
+#clientsId  .a4 .architect4:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/elsa_koshi.jpg);
+}
+
+#clientsId  .a5 .architect5:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/elsa_koshi.jpg);
+}
+
+#clientsId  .a6 .architect6:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/elsa_koshi.jpg);
+}
  
    
    
