@@ -537,17 +537,26 @@ footer{
     padding: 20px 0px;
     border-radius: 10px;
     height: 215px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out 0s;
 }
+
+.arch-card:hover{
+    margin-top: 142px;
+    height: 320px;
+} 
 
 .arch-imgBox{
     position: relative;
-    background:cornflowerblue;
     height: 260px;
     width: 260px;
-    top: -45px;
-    left: 20px;
+    margin-top: 25px;
     border-radius: 10px;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.8);
+    z-index: 2;
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
 }
 
 .arch-imgBox img{
@@ -557,15 +566,36 @@ footer{
     object-fit: cover;
 }
 
+.arch-card:hover .arch-imgBox{
+    transform: translateY(-120px);
+}
+
 .arch-content{
     position: relative;
     text-align: center;
-    background: coral;
+    background: white;
     margin-top: -100px;
     padding: 10px 15px;
     border-radius: 10px;
     visibility: hidden;
     opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.arch-container .arch-card:hover .arch-content{
+    opacity: 1;
+    animation: stretch 1.2s forwards ;
+}
+
+@keyframes stretch {
+    from{
+        visibility: hidden;
+        top: -100px;
+    }
+    to{
+        visibility: visible;
+        top: 0px;
+    }
 }
 
 .arch-text{
