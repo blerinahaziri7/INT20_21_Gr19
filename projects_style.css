@@ -2,160 +2,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-} 
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 header{
-    display: flex;
-    width: 100%;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    background: black;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  background: black;
 }
 
 .logo-container, .nav_links, .search-box, .search-bar {
-    display: flex;
+  display: flex;
 }
 
 .logo-container{
-    flex: 1;
-    margin-left: 5%;
+  flex: 1;
+  margin-left: 5%;
 }
 
 #logo{
-    width: 25%; 
-    height: 25%;
-    cursor: pointer;
+  width: 25%;
+  height: 25%;
+  cursor: pointer;
 }
 
 nav{
-    flex: 2;
-    font-weight: 200;
+  flex: 2;
+  font-weight: 200;
 }
 
 .nav_links{
-    justify-content: space-between;
-    list-style: none;
+  justify-content: space-between;
+  list-style: none;
 }
 
 li,a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .nav_links li a {
-    transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .nav_links li a:hover {
-    color: gray;
+  color: gray;
 }
 
 .search-box{
-    flex: 1;
-    justify-content: flex-end;
-    margin-right: 5%;
-    font-weight: 200;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 5%;
+  font-weight: 200;
 }
 
 .search-bar{
-    border: 1px solid white;
-    border-radius: 50px;
-    height:35px;
-    width: 35px;
-    padding: 3px;
-    position: relative;
-    transition: 0.3s ease 0s;
-    overflow: hidden;
-    font-weight: 200;
+  border: 1px solid white;
+  border-radius: 50px;
+  height:35px;
+  width: 35px;
+  padding: 3px;
+  position: relative;
+  transition: 0.3s ease 0s;
+  overflow: hidden;
+  font-weight: 200;
 }
 
 .search-bar:focus-within{
-    width: 80%;
-    border: 1px solid white;
+  width: 80%;
+  border: 1px solid white;
 }
 
 input {font-family: 'Poppins', sans-serif;}
 
 .search-bar_input{
-    flex-grow: 1;
-    font-size: 16px;
-    padding: 0 8px;
-    font-weight: 200;
-    border: 0;
-    outline: 0;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    line-height: 27px;
-    opacity: 0;
-    cursor: pointer;
+  flex-grow: 1;
+  font-size: 16px;
+  padding: 0 8px;
+  font-weight: 200;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  line-height: 27px;
+  opacity: 0;
+  cursor: pointer;
 }
 
-::placeholder { 
-    color: white;
-    opacity: 1; 
-    font-weight: 200;
-  }
+::placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 200;
+}
 
 .search-bar_input:focus{
-    opacity: 1;
-    cursor: initial;
-    width: calc(100% - 35px);
-    background: transparent;
-    color: white;
+  opacity: 1;
+  cursor: initial;
+  width: calc(100% - 35px);
+  background: transparent;
+  color: white;
 }
 .search-bar_submit{
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border: 0;
-    background: transparent;
-    border-radius: 50px;
-    padding-top: 3px;
-    padding-right: 2px;
-    margin-left: auto;
-    transition: background 0.3s ease 0s;
-    outline: 0;
-    fill: white;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  border-radius: 50px;
+  padding-top: 3px;
+  padding-right: 2px;
+  margin-left: auto;
+  transition: background 0.3s ease 0s;
+  outline: 0;
+  fill: white;
 }
 
 #banner-section{
-    position: relative;
+  position: relative;
 }
 /* Navbar CSS End */
 
-#blurry-background{
+#blurry-bg{
   background-image: url("images/ProjectsIntro.png");
   width: 100%;
   height: 700px;
-  filter: brightness(70%) blur(4px);     
+  filter: brightness(70%) blur(4px);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
-.centered-background-text{
-  background-color: rgba(0,0,0, 0.5); 
+.centered-bg-text{
+  background-color: rgba(0,0,0, 0.5);
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
+  border: 3.5px solid white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,130 +164,249 @@ input {font-family: 'Poppins', sans-serif;}
   padding: 40px;
   text-align: center;
 }
+/* First Section CSS End */
 
-/* Slider CSS Begin */
+.type-one{
+  background-color: rgb(209, 207, 207);
+}
+
+.type-two{
+  background-color: rgb(145, 145, 145);
+}
+
+.projects-slider-title{
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+
 .entire-slider{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-   
-  .slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-    
-  .slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 800px;
-    height: 500px;
-  }
-  
-  .navigation-manual{
-    width: 800px;
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .manual-btn{
-    border: 4px solid #ffffff;
-    padding: 8px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .manual-btn:hover{
-    background: #ffffff;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  .slider-btn{
-    padding: 20px 0 30px;
-    display: flex;
-    justify-content: center;
-  }
-/* Slider CSS End */
+  height: 660px;
+  display: flex;
+  position: relative;
+}
 
-/* Footer CSS Begin */
+.projects-ul{
+ background-color: rgba(0,0,0, 0.5);
+ color: white;
+ border: 7px double white;
+ border-radius: 8px;
+ position: absolute;
+ margin-top: 25px;  
+ height: 65%;
+ width: 35%;
+ padding-top: 30px;
+ padding-left: 60px;
+ font-size: 30px;
+}
+
+.about-archs-btn{
+  position: absolute;
+  margin-top: 32%;
+  font-size: 30px;
+  width: 350px;
+  height: 70px;
+  background-color: rgb(202, 202, 202);
+  border: 8px double rgb(0, 0, 0);
+  border-radius: 8px;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.5s ease 0s;
+}
+
+.about-archs-btn:hover{
+ background-color: rgba(0,0,0, 0.5);
+  color:rgb(255, 255, 255);
+  border: 8px double white;
+}
+
+.slider{
+  width: 900px;
+  height: 600px;
+  border: 7px double black;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slides{
+  width: 500%;
+  height: 600px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 900px;
+  height: 600px;
+}
+
+.navigation-box{
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 3px solid black;
+  border-radius: 40px;
+  width: 330px;
+  height: 44px;
+  margin-top: -8px;
+  position:absolute;
+}
+
+.navigation-manual{
+  width: 900px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 3.5px solid #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 1;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #ffffff;
+}
+
+/* First Project Buttons */
+#radio1_1:checked ~ .first-project-images{
+  margin-left: 0;
+}
+
+#radio1_2:checked ~ .first-project-images{
+  margin-left: -20%;
+}
+
+#radio1_3:checked ~ .first-project-images{
+  margin-left: -40%;
+}
+
+#radio1_4:checked ~ .first-project-images{
+  margin-left: -60%;
+}
+
+#radio1_5:checked ~ .first-project-images{
+  margin-left: -80%;
+}
+
+/* Second Project Buttons */
+#radio2_1:checked ~ .second-project-images{
+  margin-left: 0;
+}
+
+#radio2_2:checked ~ .second-project-images{
+  margin-left: -20%;
+}
+
+#radio2_3:checked ~ .second-project-images{
+  margin-left: -40%;
+}
+
+#radio2_4:checked ~ .second-project-images{
+  margin-left: -60%;
+}
+
+#radio2_5:checked ~ .second-project-images{
+  margin-left: -80%;
+
+/* Third Project Buttons */
+}#radio3_1:checked ~ .third-project-images{
+  margin-left: 0;
+}
+
+#radio3_2:checked ~ .third-project-images{
+  margin-left: -20%;
+}
+
+#radio3_3:checked ~ .third-project-images{
+  margin-left: -40%;
+}
+
+#radio3_4:checked ~ .third-project-images{
+  margin-left: -60%;
+}
+
+#radio3_5:checked ~ .third-project-images{
+  margin-left: -80%;
+
+/* Fourth Project Buttons */
+}#radio4_1:checked ~ .fourth-project-images{
+  margin-left: 0;
+}
+
+#radio4_2:checked ~ .fourth-project-images{
+  margin-left: -20%;
+}
+
+#radio4_3:checked ~ .fourth-project-images{
+  margin-left: -40%;
+}
+
+#radio4_4:checked ~ .fourth-project-images{
+  margin-left: -60%;
+}
+
+#radio4_5:checked ~ .fourth-project-images{
+  margin-left: -80%;
+}
+/* Projects Sections CSS End */
+
 footer{
-    background: black;
-    height: 300px;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    padding-top: 30px;
-    color: white;
-    margin-top: auto;
+  background: black;
+  height: 300px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  padding-top: 30px;
+  color: white;
+  margin-top: auto;
 }
 
 .footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
 }
 
 .socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .socials li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .socials a:hover{
-    color: gray;
+  color: gray;
 }
-/* Footer CSS End */
