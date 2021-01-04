@@ -1,4 +1,8 @@
 
+*{
+  margin:0;
+  padding:0;
+}
 body{
     background: url(images/background.png)
     no-repeat center center fixed; 
@@ -16,11 +20,40 @@ body{
      border-bottom-style:solid; */
      /* margin-bottom: 60px;
      margin-top: 60px; */
+    
      margin-left: 220px;
      margin-right: 220px;
      height: 200px;
-     padding-top: 70px;
+     padding-top: 50px;
    }
+   .year_start_cont p{
+    display: inline;
+     font-size: 10px;
+     color:beige;
+     
+
+   }
+   #number_arch {
+     font-family: 'times new roman';
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: 150px;
+   }
+
+
+   #year_arch{
+    text-align: right;
+     font-size: 10px;
+     padding-top: 2px;
+     padding-right: 50px;
+     
+   }
+
+   #description_arch{
+     font-size: 10px;
+    
+   }
+   
  
    .a6  {
      border-bottom-color:#ffcf75;
@@ -28,15 +61,14 @@ body{
    }
  
    .architect1, .architect2,  .architect3,  .architect4, .architect5, .architect6{
-     margin:0 auto;
-     text-align: center;
      font-style: none;
      font-weight: 100;
      font-family:  'Cormorant Garamond', serif;;
      text-decoration: none;
      font-size: 60px;
      color: #fdc835 ;
-     
+     text-align: center;
+      
    }
 
    #clientsId  .a1 .architect1:hover{
@@ -89,6 +121,7 @@ body{
   position: relative;
   margin:  auto;
   background-image: url(images/elsa_koshi.jpg);
+  
 }
 
 #clientsId  .a5 .architect5:hover{
