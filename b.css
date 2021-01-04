@@ -52,5 +52,50 @@ p {
   opacity: 0.7;
   transform: scale(0.98);
 }
+.arkitektet {
+background: url("https://img.freepik.com/free-photo/abstract-glass-window-roof-architecture-exterior_74190-6357.jpg?size=626&ext=jpg");
+}
+.projektet {
+background: url("https://i.ytimg.com/vi/p5hgXck7KP0/maxresdefault.jpg");
+}
+.students {
+background: url("https://i.pinimg.com/originals/f3/d5/39/f3d5399534fdbd3cea2810f2f9d3de3a.jpg");
+}
 
+/*About us*/
+
+ .about-section {
+   background: url(foto.jpg) no-repeat left;
+   background-size: 55%;
+   background-color: #f5ebe0;
+   overflow: hidden;
+   padding:100px 0;
+
+ }
  
+ .inner-container{
+   width:55%;
+   float:right;
+   background-color: #f5ebe0;
+   padding:150px;
+
+ }
+ .inner-container h1 {
+   margin-bottom: 30px;
+   font-size: 30px;
+   font-weight:900;
+
+ }
+ .text{
+   font-size:13px;
+   color:#A58961;
+   line-height:30px;
+   text-align: center;
+   margin-bottom: 40px;
+ }
+ .skills{
+   display:block;
+   justify-content: space-between0;
+   font-weight: 700;
+   font-size:13px;
+ }
