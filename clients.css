@@ -1,6 +1,10 @@
 
+*{
+  margin:0;
+  padding:0;
+}
 body{
-    background: url(images/background.jpg)
+    background: url(images/background.png)
     no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -9,33 +13,69 @@ body{
 }
 
    .a1, .a2, .a3, .a4, .a5, .a6{
-    border-top-color:#bf8300;
+    border-top-color: #ffcf75;
      border-top-style:solid;
-     border-width: 2px;
+     border-width: 1px;
      /* border-bottom-color: saddlebrown;
      border-bottom-style:solid; */
      /* margin-bottom: 60px;
      margin-top: 60px; */
-     margin-left: 120px;
-     margin-right: 120px;
-     height: 160px;
-     padding-top: 40px;
+    
+     margin-left: 220px;
+     margin-right: 220px;
+     height: 200px;
+     padding-top: 50px;
    }
+   .year_start_cont p{
+    display: inline;
+     font-size: 10px;
+     color:beige;
+     
+
+   }
+   #number_arch {
+     font-family: 'times new roman';
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: 150px;
+   }
+
+
+   #year_arch{
+    text-align: right;
+     font-size: 10px;
+     padding-top: 2px;
+     padding-right: 50px;
+     
+   }
+
+   #description_arch{
+     font-size: 10px;
+    
+   }
+   
  
    .a6  {
-     border-bottom-color:#bf8300;
+     border-bottom-color:#ffcf75;
      border-bottom-style:solid;
    }
  
    .architect1, .architect2,  .architect3,  .architect4, .architect5, .architect6{
+<<<<<<< HEAD
      text-align: center;
      text-decoration: none;
      font-style: italic;
      font-family:  'Nanum Myeongjo';
+=======
+   
+     font-weight: 100;
+    
+>>>>>>> b72a432fda6cfe434386ac17387ebe600b479797
      text-decoration: none;
-     font-size: 40px;
-     color: #62572a ;
-     margin-top: 20px;
+     font-size: 60px;
+     color: #fdc835 ;
+     text-align: center;
+      
    }
 
    #clientsId  .a1 .architect1:hover{
@@ -86,8 +126,9 @@ body{
   background-repeat: no-repeat;
   background-position: center ;
   position: relative;
-  margin: auto;
+  margin:  auto;
   background-image: url(images/elsa_koshi.jpg);
+  
 }
 
 #clientsId  .a5 .architect5:hover{
@@ -115,6 +156,12 @@ body{
   margin: auto;
   background-image: url(images/elsa_koshi.jpg);
 }
+
+.nav_links li a:hover {
+  color: #fdc835 ;
+}
+
+
  
    
    

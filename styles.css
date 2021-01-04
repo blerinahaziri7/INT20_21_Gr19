@@ -28,7 +28,7 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
     align-items: center;
-    background: black;
+    background: #151515;
 }
 
 .logo-container, .nav_links, .search-box, .search-bar {
