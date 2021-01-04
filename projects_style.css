@@ -197,8 +197,9 @@ input {font-family: 'Poppins', sans-serif;}
  height: 65%;
  width: 35%;
  padding-top: 30px;
- padding-left: 60px;
+ padding-left: 30px;
  font-size: 30px;
+ list-style-position: inside;
 }
 
 .about-archs-btn{
@@ -251,7 +252,7 @@ input {font-family: 'Poppins', sans-serif;}
 }
 
 .navigation-box{
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid black;
   border-radius: 40px;
   width: 330px;
@@ -366,6 +367,158 @@ input {font-family: 'Poppins', sans-serif;}
   margin-left: -80%;
 }
 /* Projects Sections CSS End */
+
+#hotel-section{
+ background-color:rgb(209, 209, 209)
+}
+
+#hotel-title{
+  font-size: 45px;
+  text-align: center;
+  font-style: italic;
+}
+
+#hotel-subheading{
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+
+.hotel-headings{
+  color: rgb(0, 0, 0);
+}
+
+.h-container{
+  display: flex;
+}
+
+.h-slider{
+  width: 700px;
+  height: 450px; 
+  margin-top: 10px;
+}
+
+.h-slides{
+  height: 450px;
+}
+
+.h-slide img{
+  width: 700px;
+  height: 450px;
+}
+
+.h-navigation-box{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 240px;
+  height: 35px;
+  margin-top: -6px;
+}
+
+.h-navigation-manual{
+  width: 700px;
+  margin-top: -50px;
+}
+
+.h-manual-btn{
+  padding: 8px;
+}
+
+/* Left Slider Buttons */
+#radio5_1:checked ~ .hotel-interior-images{
+  margin-left: 0;
+}
+
+#radio5_2:checked ~ .hotel-interior-images{
+  margin-left: -20%;
+}
+
+#radio5_3:checked ~ .hotel-interior-images{
+  margin-left: -40%;
+}
+
+#radio5_4:checked ~ .hotel-interior-images{
+  margin-left: -60%;
+}
+
+/* Right Slider Buttons */
+#radio6_1:checked ~ .hotel-exterior-images{
+  margin-left: 0;
+}
+
+#radio6_2:checked ~ .hotel-exterior-images{
+  margin-left: -20%;
+}
+
+#radio6_3:checked ~ .hotel-exterior-images{
+  margin-left: -40%;
+}
+
+#radio6_4:checked ~ .hotel-exterior-images{
+  margin-left: -60%;
+}
+
+table{
+  width: 65%;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+th{
+  font-size: 28px;
+}
+
+.hotel-info{
+  background-color: rgba(0,0,0, 0.7);
+  color: white;
+  border: 7px double white;
+  border-radius: 10px;
+}
+
+#nested-list{
+  height: 600px;
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+  list-style-position: inside;
+}
+
+ul.h{
+  list-style-type: circle;
+  padding-left: 50px;
+  font-size: 28px;
+}
+
+#description-list{
+  height: 350px;
+  width: 65%;
+  margin-top: -170px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+dt{
+  font-size: 32px;
+  padding: 5px 0 0 20px;
+  text-decoration: underline;
+}
+
+dd{
+  font-size: 25px;
+  padding: 0 0 5px 50px;
+}
+
+.h-btn{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+/* Hotel CSS End */
 
 footer{
   background: black;
