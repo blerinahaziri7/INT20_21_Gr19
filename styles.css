@@ -545,6 +545,98 @@ footer{
     border: 2px solid rgba(255,255,255,1);
 }
 /* ------------------------ About Us Section Ending ------------------ */
+
+/* ------------------------ Quote of the day Start ------------------ */
+.quote-container{
+    width: 100%;
+    height: 350px;
+    padding: 40px;
+}
+
+.quote-heading{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.quote-heading h1 {
+    font-size: 30;
+    color:#22313f;
+}
+
+.quote-body {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    padding: 50px 35px ;
+}
+
+.quote{
+    text-align: center;
+    color: #22313f;
+    height: 42px;
+    overflow: auto;
+}
+
+.icon{
+    margin-right: 5px;
+}
+
+.quote{
+    filter: blur(2px);
+}
+
+.author{
+    text-align: center;
+    margin-top: 15px;
+    filter: blur(2px);
+}
+
+.quote-buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 1px solid #93a0ac;
+    padding: 15px 0;
+}
+
+.tweet-quote{
+    position: absolute;
+    bottom: 1px;
+    right: 15px;
+}
+
+.tweet-quote a{
+    font-size: 40px;
+    color: #455261;
+    transition: 0.3s ease;
+}
+
+.tweet-quote a:hover{
+    color: #00acee;
+}
+
+.tweet-quote span{
+    font-size: 16px;
+}
+
+.quote-btn button{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: #455261;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.quote-btn button:active{
+    background-color: #00acee;
+}
+
 /* ------------------------ Architects Section Start ------------------ */
 .arch-container{
     position: relative;
