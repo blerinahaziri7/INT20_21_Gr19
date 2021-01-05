@@ -46,22 +46,44 @@ const quote = document.querySelector(".quote");
 const author = document.querySelector(".author");
 const tweetBtn = document.querySelector(".tweet-quote");
 
+var index = 1;
+
 function shuffleQuotes(){
-    let index = Math.floor(Math.random()*quotes.length);
+    index = Math.floor(Math.random()*quotes.length);                  //generates a random index
     quote.innerHTML = quotes[index];
     author.innerHTML = authors[index];
     quote.style.webkitFilter = "blur(2px)";
     author.style.webkitFilter = "blur(2px)";
-
 }
 
+var currentDate = new Date();                                       //gets current date
+var strCurrentDate = String(currentDate.getDate());                  //gets the day from current date and converts it to a string
+
+if (strCurrentDate == localStorage.getItem("yourQuoteDate") ) {     // checks if current date == the date you picked a quote so you can't pick more than once a day 
+    var definedQuote = localStorage.getItem("yourQuote");             // gets "yourQuote" value from localStorage 
+    var definedAuthor = localStorage.getItem("yourAuthor");            
+    document.querySelector(".quote").innerHTML = definedQuote;          // sets the gotten value 
+    document.querySelector(".author").innerHTML = definedAuthor;
+    document.querySelector(".quote").style.webkitFilter = "blur(0px)";
+    document.querySelector(".author").style.webkitFilter = "blur(0px)";
+    document.getElementById("generate-btn").disabled = true;
+}
+else {         // if not => pick a quote
 var shuffle = setInterval(shuffleQuotes,100);
+}
 
 quoteBtn.addEventListener("click", pickQuote);
-function pickQuote(){
+
+function pickQuote(){                   // picks a quote by stopping the shuffle
     clearInterval(shuffle);
     quote.style.webkitFilter = "blur(0px)";
     author.style.webkitFilter = "blur(0px)";
     tweetBtn.style.display = "block";
     quoteBtn.disabled = true;
+
+    if (typeof(Storage) !== "undefined") {      
+        localStorage.setItem("yourQuote", quotes[index]);    // saves the picked quote to localStorage
+        localStorage.setItem("yourAuthor", authors[index]);
+        localStorage.setItem("yourQuoteDate", strCurrentDate);
+      } ;
 }
