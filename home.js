@@ -59,14 +59,15 @@ function shuffleQuotes(){
 var currentDate = new Date();                                       //gets current date
 var strCurrentDate = String(currentDate.getDate());                  //gets the day from current date and converts it to a string
 
-if (strCurrentDate == localStorage.getItem("yourQuoteDate") ) {     // checks if current date == the date you picked a quote so you can't pick more than once a day 
+if (strCurrentDate == localStorage.getItem("yourQuoteDate") && localStorage.getItem("yourQuote") != null && localStorage.getItem("yourAuthor") != null) {     // checks: if current date == the date you picked a quote (so you can't pick more than once a day), if a quote and an author exist
     var definedQuote = localStorage.getItem("yourQuote");             // gets "yourQuote" value from localStorage 
     var definedAuthor = localStorage.getItem("yourAuthor");            
-    document.querySelector(".quote").innerHTML = definedQuote;          // sets the gotten value 
-    document.querySelector(".author").innerHTML = definedAuthor;
-    document.querySelector(".quote").style.webkitFilter = "blur(0px)";
-    document.querySelector(".author").style.webkitFilter = "blur(0px)";
-    document.getElementById("generate-btn").disabled = true;
+    quote.innerHTML = definedQuote;          // sets the gotten value 
+    author.innerHTML = definedAuthor;
+    quote.style.webkitFilter = "blur(0px)";
+    author.style.webkitFilter = "blur(0px)";
+    quoteBtn.style.display = "none";
+    tweetBtn.style.display = "block";
 }
 else {         // if not => pick a quote
 var shuffle = setInterval(shuffleQuotes,100);
@@ -78,8 +79,8 @@ function pickQuote(){                   // picks a quote by stopping the shuffle
     clearInterval(shuffle);
     quote.style.webkitFilter = "blur(0px)";
     author.style.webkitFilter = "blur(0px)";
+    quoteBtn.style.display = "none";
     tweetBtn.style.display = "block";
-    quoteBtn.disabled = true;
 
     if (typeof(Storage) !== "undefined") {      
         localStorage.setItem("yourQuote", quotes[index]);    // saves the picked quote to localStorage

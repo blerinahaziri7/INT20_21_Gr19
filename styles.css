@@ -603,11 +603,11 @@ footer{
 
 .tweet-quote{
     position: absolute;
-    bottom: 1px;
-    right: 15px;
+    top: 10px;
 }
 
 .tweet-quote a{
+    padding-left: 50px;
     font-size: 40px;
     color: #455261;
     transition: 0.3s ease;
@@ -615,6 +615,12 @@ footer{
 
 .tweet-quote a:hover{
     color: #00acee;
+}
+
+#already-picked {
+    position: relative;
+    font-size: 9px;
+    color:#22313f;
 }
 
 .tweet-quote span{
