@@ -3,10 +3,10 @@ window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction(){
     if (window.scrollY > 730) { 
-        toTopButton.style.display = "block"; // show button
+        toTopButton.classList.add("show"); // show button
     }
     else {
-        toTopButton.style.display = "none"; // hide button
+        toTopButton.classList.remove("show"); // hide button
     }
 }
 

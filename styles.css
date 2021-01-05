@@ -26,7 +26,7 @@ body {
 
 /*-------------------------- Back to top button -----------------------*/
 #to-top-btn{
-    display: none;
+    display: inline-block;
     position:fixed;
     bottom: 20px;
     right: 20px;
@@ -39,15 +39,21 @@ body {
     outline: none;
     border: 3px solid rgb(32,32,32);
     border-radius: 1px;
-    transition-property: background-color, color;
-    transition: 0.2s ease-in-out;
-    z-index: 3;
+    transition: background-color 0.5s, color 0.5s, opacity 0.5s, visibility 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 30;
 }
 
 #to-top-btn:hover,  #to-top-btn:focus{
     background-color: rgb(52, 52, 52);
     color: white;
 }
+
+#to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /* -------------------------- Header Start ---------------------------- */
 header{
