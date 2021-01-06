@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Selene Architecture</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="booknow.css">
+        <link rel="icon" href="images/favicon.png">
+        <style>
+          .h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2c2825;
+            font-size: 32px;
+          }
+          .h4{
+            font-family: Arial, Helvetica, sans-serif;
+            color:  #2c2825;
+            font-size: 20px;
+          }
+
+          .form1 ,.form2{
+            font-family: Arial, Helvetica, sans-serif;
+            color:  #2c2825;
+            font-size: 15px;
+            font-weight: bolder;
+          }
+
+          span{
+            color:rgb(216, 66, 66);
+          }
+          
+        </style>
+    </head>
+
+    <body>
+
+            <header id="entry">
+              
+                <nav>
+                    <a href="index.html" target="_blank"><img src="images/booknow.png" alt="selenearch" ></a>
+                </nav>
+                
+                <h1 class="h1" align="center">Interested?</h1>
+                <h4 class="h4" align="center">We would love to hear from you. Please complete this form:</h4>
+            </header>
+        
+        
+            
+            <form action="https://www.google.com/" method="GET">
+                <div class="form1">
+                    
+                        <label for="fname">Full Name<span>*</span></label>
+                        <input type="text" id="fname" name="fullname" placeholder="Required">
+                    
+                        <label for="email">Email<span>*</span></label>
+                        <input type="text" id="email" name="email" placeholder="Required">
+
+                        <label for="phonenumber"> Mobile<span>*</span></label>
+                        <input type="text" id="phonenumber" name="phonenumber" value="+383">
+
+                        <label for="proffession"> Proffession <span>*</span> </label>
+                        <select id="proffession"name="proffession">
+                            <option value="None">None</option>
+                            <option value="proffession1">Student</option>
+                            <option value="proffession2">Regular Worker</option>
+                            <option value="proffession3">Organisation</option>
+                            <option value="proffession4">Company</option>
+                        </select>
+                </div>
+
+                <div class="article">
+                      <h4 style="font-family: arial; font-size:22px; padding-bottom: 10px; color:#2c2825">Tour Date</h4>
+                      <p style="font-family: arial; font-size:17px;line-height: 20px;  color:#2c2825">We would love to show you <abbr title="The Selene Society">TSS</abbr> . Please let us know when you are available and we will do
+                       our best to receive you on that date and time.</p>
+                </div>
+
+                <div class="form2">
+                        <label for="date">Date<span>*</span></label>
+                        <input type="date" id="date "name="data-e-rezervimit" min="2021-01-01">
+
+                        <label for="time">Time<span>*</span></label>
+                        <input type="time" id="time"name="ora-e-rezervimit" min="09:00 AM" max="06:00 PM">
+
+                        <p style="padding-bottom: 12px; font-size:15px">  Architect<span>*</span></p>
+                        <label class="container">Elsa Koshi
+                            <input type="radio" checked="checked" name="radio">
+                          </label>
+                          <label class="container">Leart Duraku
+                            <input type="radio" name="radio">
+                          </label>
+                          <label class="container">Bahrije Beqiri
+                            <input type="radio" name="radio">
+                          </label>
+                          <label class="container">Mrika Maloku
+                            <input type="radio" name="radio">
+                          </label>
+                          <label class="container">Valmira Ahmeti
+                            <input type="radio" name="radio">
+                          </label>
+                          <label class="container">Dardan Krasniqi
+                            <input type="radio" name="radio">
+                          </label>
+                          
+                        <p style="margin-top: 8px"> Participants<span>*</span></p>
+                        <input type="number" id="guests" name="number of guests" placeholder="0" min="0" max="4" step="1">
+
+                        <label for="cv">Uploud your cv<span>*</span></label>
+                        <input type="file"id="cv" name="cv">
+
+                        <textarea name="message" placeholder="write a message!" ></textarea>
+                </div>
+
+                <!--<div class="form3">
+                        <label for="cv">Uploud your cv</label>
+                        <input type="file"id="cv" name="cv">
+
+                        <textarea name="message" placeholder="write a message!" ></textarea>
+                </div> -->
+                
+
+                
+                <div class="form4">       
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <a href="#entry"> <mark> Click here to start again!</mark> </a>
+                </div>
+                    
+            </form>     
+    </body>
+            <footer>
+                <div class="footer-content">
+                    
+                    <p>We collaborate with ambitious brands and people; let's build something great together.</p>
+                   
+                    <p>Copyright &copy;2020 SELENE</p>
+                </div>
+            </footer>
+
+        
+       
+    
+</html>

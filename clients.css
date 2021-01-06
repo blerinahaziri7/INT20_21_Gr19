@@ -4,8 +4,8 @@
   padding:0;
 }
  body{
-     /* background: url(images/background.png)  */
-    /* no-repeat center center fixed;  */
+     background: url(images/background_1.png)
+     no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -52,6 +52,7 @@
 
    #description_arch{
      font-size: 10px;
+     color:white;
     
    }
    
@@ -65,7 +66,7 @@
 
      text-align: center;
      text-decoration: none;
-     font-style: italic;
+     
      font-family:  'Nanum Myeongjo';
      font-family: 'Cormorant Garamond', serif;
      font-weight: 100;
