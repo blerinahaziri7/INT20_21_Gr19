@@ -8,6 +8,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 body{
     background: linear-gradient(to right,#3525af,#9153c9);
 }
@@ -125,10 +126,16 @@ body{
 }
 
 .header .about {
+    
     margin-top:20px;
     line-height: 26px; 
 }
-
+.header .about .p1{
+    
+    margin-top:10px;
+    line-height: 15px;
+   
+}
 .right_inner .education {
     margin-top:30px;
 
@@ -155,17 +162,21 @@ body{
     font-weight: 700;
     letter-spacing: 2px;
     color:#9153c9;
+   
+    
 }
 
 .right_inner .li_wrap .date .info_com{
     font-weight: 300;
     font-size: 14px;
     margin-top:3px ;
+    
 
 }
 
 .right_inner .li_wrap .date .info_cont{
     margin-top: 15px;
+   
 }
 
 
