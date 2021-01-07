@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="booknow.css">
         <link rel="icon" href="images/favicon.png">
+        <script src="forms.js"></script>
         <style>
 
           .h1{
@@ -29,6 +30,7 @@
           span{
             color:rgb(216, 66, 66);
           }
+ 
           mark{
            color:#9DA5BE;
            background-color:   #F9F3F0;
@@ -43,6 +45,10 @@
            
           }
         
+
+
+         
+          
 
         </style>
     
@@ -65,13 +71,17 @@
                 <div class="form1">
                     
                         <label for="fname">Full Name<span>*</span></label>
-                        <input type="text" id="fname" name="fullname" placeholder="Required">
+                        <input type="text" id="fname" name="fullname" placeholder="Required" onkeydown="validation2()">
+                        <span id="text3"></span> </br> </br>
+                       
                     
                         <label for="email">Email<span>*</span></label>
-                        <input type="text" id="email" name="email" placeholder="Required">
+                        <input type="text" id="email" name="email" placeholder="Required" onkeydown="validation()" >
+                        <span id="text1"></span> </br>
 
                         <label for="phonenumber"> Mobile<span>*</span></label>
-                        <input type="text" id="phonenumber" name="phonenumber" value="+383">
+                        <input type="text" id="phonenumber" name="phonenumber" value="+383" onkeydown="validation1()">
+                        <span id="text2"></span> </br>
 
                         <label for="proffession"> Proffession <span>*</span> </label>
                         <select id="proffession"name="proffession">
@@ -132,6 +142,7 @@
                 </div>
                     
             </form>     
+           
     </body>
     <footer>
       <div class="footer-content">
