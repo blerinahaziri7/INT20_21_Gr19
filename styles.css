@@ -293,9 +293,18 @@ footer{
     background-color: rgb(255, 255, 255);
     border: 2px solid black;
     border-radius: 8px;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.5s ease 0s;
+  }
+
+  .projects-btn:hover{
+    background-color: black;
+    color: white;
   }
 
   /* Slideshow CSS End */
+
 
 
   
