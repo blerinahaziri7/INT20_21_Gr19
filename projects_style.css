@@ -187,7 +187,7 @@ input {font-family: 'Poppins', sans-serif;}
   position: relative;
 }
 
-.projects-ul{
+.projects-description{
  background-color: rgba(0,0,0, 0.5);
  color: white;
  border: 7px double white;
@@ -196,8 +196,8 @@ input {font-family: 'Poppins', sans-serif;}
  margin-top: 25px;  
  height: 65%;
  width: 35%;
- padding-top: 30px;
- padding-left: 30px;
+ padding-top: 10px;
+ padding-left: 20px;
  font-size: 30px;
  list-style-position: inside;
 }
@@ -217,7 +217,7 @@ input {font-family: 'Poppins', sans-serif;}
 }
 
 .about-archs-btn:hover{
- background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0,0,0, 0.5);
   color:rgb(255, 255, 255);
   border: 8px double white;
 }
@@ -255,7 +255,7 @@ input {font-family: 'Poppins', sans-serif;}
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid black;
   border-radius: 40px;
-  width: 330px;
+  width: 260px;
   height: 44px;
   margin-top: -8px;
   position:absolute;
@@ -302,10 +302,6 @@ input {font-family: 'Poppins', sans-serif;}
   margin-left: -60%;
 }
 
-#radio1_5:checked ~ .first-project-images{
-  margin-left: -80%;
-}
-
 /* Second Project Buttons */
 #radio2_1:checked ~ .second-project-images{
   margin-left: 0;
@@ -323,11 +319,8 @@ input {font-family: 'Poppins', sans-serif;}
   margin-left: -60%;
 }
 
-#radio2_5:checked ~ .second-project-images{
-  margin-left: -80%;
-
 /* Third Project Buttons */
-}#radio3_1:checked ~ .third-project-images{
+#radio3_1:checked ~ .third-project-images{
   margin-left: 0;
 }
 
@@ -343,11 +336,8 @@ input {font-family: 'Poppins', sans-serif;}
   margin-left: -60%;
 }
 
-#radio3_5:checked ~ .third-project-images{
-  margin-left: -80%;
-
 /* Fourth Project Buttons */
-}#radio4_1:checked ~ .fourth-project-images{
+#radio4_1:checked ~ .fourth-project-images{
   margin-left: 0;
 }
 
@@ -361,10 +351,6 @@ input {font-family: 'Poppins', sans-serif;}
 
 #radio4_4:checked ~ .fourth-project-images{
   margin-left: -60%;
-}
-
-#radio4_5:checked ~ .fourth-project-images{
-  margin-left: -80%;
 }
 /* Projects Sections CSS End */
 
