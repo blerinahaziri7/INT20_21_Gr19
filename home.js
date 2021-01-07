@@ -88,3 +88,11 @@ function pickQuote(){                   // picks a quote by stopping the shuffle
         localStorage.setItem("yourQuoteDate", strCurrentDate);
       } ;
 }
+
+/* -------------- toTop button counter ----------- */
+var count = 0;
+$("#to-top-btn").on('click', function() {
+    count++;
+  if (typeof(Storage) !== "undefined") {
+      sessionStorage.toTopCount = count;
+  }});
