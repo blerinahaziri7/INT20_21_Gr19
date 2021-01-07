@@ -60,6 +60,12 @@ body{
     margin:0 auto;
 }
 
+.audio{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
 
 
