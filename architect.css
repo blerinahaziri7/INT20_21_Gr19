@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(34, 33, 33);
+    background-color:rgb(221, 210, 210);
 }
 
 .orientation{
@@ -15,14 +15,11 @@ body{
     margin-bottom: 10px;
     height:500px;
 }
-
-
 .text-content{
     text-align: center;
     padding-top: 20px;
 
 }
-
 .logos{
     text-align: center;
     padding-top:90px;
