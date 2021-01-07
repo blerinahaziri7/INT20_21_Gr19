@@ -1,0 +1,177 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+ body{
+     background: url(images/background_1.png)
+     no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+} 
+
+   .a1, .a2, .a3, .a4, .a5{
+    border-top-color: #ffcf75;
+     border-top-style:solid;
+     border-width: 1px;
+     /* border-bottom-color: saddlebrown;
+     border-bottom-style:solid; */
+     /* margin-bottom: 60px;
+     margin-top: 60px; */
+    
+     margin-left: 220px;
+     margin-right: 220px;
+     height: 200px;
+     padding-top: 50px;
+   }
+ 
+   .year_start_cont p{
+    display: inline;
+     font-size: 10px;
+     color:beige;
+     
+
+   }
+   #number_arch {
+     font-family: 'times new roman';
+    padding-left: 10%;
+    font-size: 30px;
+    font-weight: 150px;
+   }
+
+
+   #year_arch{
+    text-align: right;
+     font-size: 10px;
+     padding-top: 2px;
+     padding-right: 50px;
+     
+   }
+
+   #description_arch{
+     font-size: 10px;
+     color:white;
+    
+   }
+   
+ 
+   .a5  {
+     border-bottom-color:#ffcf75;
+     border-bottom-style:solid;
+   }
+ 
+   .architect1, .architect2,  .architect3 ,  .architect4 , .architect5 {
+
+     text-align: center;
+     text-decoration: none;
+     
+     font-family:  'Nanum Myeongjo';
+     font-family: 'Cormorant Garamond', serif;
+     font-weight: 100;
+     font-size: 60px;
+     color: #fdc835 ;
+     text-align: center;
+      
+   }
+    .first, .second, .third, .forth, .fifth{
+    text-align: center;
+    text-decoration: none;
+    
+    font-family:  'Nanum Myeongjo';
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 100;
+    font-size: 60px;
+    color: #fdc835 ;
+    text-align: center;
+
+   }
+   #clientsId  .a1 .architect1:hover{
+      width: 300px;
+      height: 300px;
+      background-size: 100%;
+      background-size: cover;
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: center ;
+      position: relative;
+      margin: auto;
+      background-image: url(images/elsa_koshi.jpg);
+   }
+
+   #clientsId  .a2 .architect2:hover{
+    width: 300px;
+    height: 300px;
+    background-size: 70%;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    position: relative;
+    margin: auto;
+    background-image: url(images/Arch2.1.jpeg);
+ }
+
+ #clientsId  .a3 .architect3:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 70%;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/Arch3.jpeg);
+}
+
+#clientsId  .a4 .architect4:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 70%;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin:  auto;
+  background-image: url(images/eliza.hoxha.jpeg);
+  
+}
+
+#clientsId  .a5 .architect5:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 70%;
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/ledri.duraku.jpeg);
+}
+
+#clientsId  .a6 .architect6:hover{
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-size: cover;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center ;
+  position: relative;
+  margin: auto;
+  background-image: url(images/elsa_koshi.jpg);
+}
+
+.nav_links li a:hover {
+  color: #fdc835 ;
+}
+
+
+ 
+   
+   
+   

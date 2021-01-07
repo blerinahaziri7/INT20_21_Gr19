@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="email">
+      <label for="email">Email:</label>
+      <input type="text" name="email">
+      
+    <script>
+        class ValidoErrorin extends Error
+        {
+            constructor(mesazhi)
+            {
+                super(mesazhi);
+                this.pershkrimi = "Validimi i errorit";
+                this.kodi = '20';
+            }
+            shtypMesazhin()
+            {
+                return 'Validimi ka deshtuar, detajet:' + this.pershkrimi + ','+ 'kodi:'+this.kodi;
+            }
+        }
+        try
+        {
+            throw new ValidoErrorin("Nuk eshte email-i valid!"); 
+        }
+        catch (error)
+        {
+            if (error instanceof ValidoErrorin) {
+                console.log(error.pershkrimi);
+                console.log(error.shtypMesazhin());
+            }
+            else
+            {
+                console.log('Gabim i panjohur!', error);
+                throw error;
+            }
+        }
+    </script>
+
+</body>
+</html>

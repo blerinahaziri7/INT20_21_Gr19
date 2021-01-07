@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selene Architecture</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="to-top-btn"><i class="fas fa-arrow-up"></i></button>
+    <section id="banner-section">
+
+        <div class="slideshow-item">
+            <img src="images/bw1.jpg" alt="">
+        </div>
+        <div class="slideshow-item">
+            <img src="images/bw2.jpg" alt="">
+        </div>
+        <div class="slideshow-item">
+            <img src="images/colorful.jpg" alt="">
+        </div>
+        <header>
+            <div class="logo-container">
+                <img src="images/selene_logo.png" id="logo" alt="logo" />
+
+            </div>
+
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CLIENTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <div class="search-bar">
+
+                    <input type="text" class="search-bar_input" placeholder="type to search" spellcheck="false" />
+
+                    <button class="search-bar_submit">
+                        <svg style="width: 50%; height: 50%;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005"
+                            style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                       S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                       c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                        M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="hero hero-container">
+            <div class="hero-content">
+                <h1 class="title">Make sure you are recognized!</h1>
+                <p class="message">“Architecture should speak of its time and place, but yearn for timelessness.”</p>
+                <a href="#home-about" class="more-btn">Get to know us</a>
+            </div>
+
+            <div class="cards">
+                <a href="#home-architects">
+                    <div class="card card1">
+                        <h4>Discovery</h4>
+                        <p>Find young, talented and hardworking architects.</p>
+                    </div>
+                </a>
+                <a href="#home-projects">
+                    <div class="card card2">
+                        <h4>Inspiration</h4>
+                        <p>Get inspired by their unique and creative projects.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+    </section>
+
+    <main>
+        <!----------------------About Us----------------------->
+        <div id="home-about" class="about-container">
+            <div class="about-card">
+                <div class="about-imgBox">
+                    <img src="./images/meeting.jpg" alt="">
+                </div>
+
+                <div class="about-contentBox">
+                    <div class="about-content">
+                        <h1>About Us</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam distinctio eos commodi sequi
+                            perspiciatis nobis!</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------Quote of the day----------------------->
+        <div class="quote-container">
+            <div class="quote-heading">
+                <h1>Quote of the day</h1>
+            </div>
+            <div class="quote-body">
+                <div class="quote">
+                    <span>"Architecture is really about well-being. I think that people want to feel good in a space… On
+                        the one hand it’s about shelter, but it’s also about pleasure."</span>
+                </div>
+                <div class="author">
+                    - Zaha Hadid
+                </div>
+                <div class="quote-buttons">
+                    <div class="quote-btn">
+                        <button id="generate-btn">Pick one</button>
+                    </div>
+                    <div class="tweet-quote" style="display: none;">
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank">
+                            <span>Tweet it!</span>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <br />
+                        <span id="already-picked">(Come back tomorrow to pick another one!)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------Architects----------------------->
+        <div id="home-architects" class="arch-container">
+            <div class="arch-card">
+                <div class="arch-imgBox">
+                    <img src="./images/elsa_koshi.jpg" alt="">
+                </div>
+                <div class="arch-content">
+                    <h2>Elsa Koshi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cumque rem.</p>
+                </div>
+            </div>
+
+            <div class="arch-text">
+                <h1>Architects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente quibusdam dolorem beatae
+                    quidem eaque.</p>
+            </div>
+
+            <div class="arch-card">
+                <div class="arch-imgBox">
+                    <img src="./images/elsa_koshi.jpg" alt="">
+                </div>
+                <div class="arch-content">
+                    <h2>Elsa Koshi</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cumque rem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------- Projects Section Begin ------------------>
+        <section id="home-projects" class="homepage-projects">
+            <div class="slider-title">
+                <h1 id="slider-heading">Projects</h1>
+                <p id="slider-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laborum eaque quam, impedit maxime, animi nisi esse labore reiciendis atque blanditiis. Vitae eos nulla natus enim ipsam maiores aperiam debitis?</p>
+            </div>
+            <!-- Slider Begin -->
+            <div class="entire-slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Radio Buttons Start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <!-- Slide Images Begin -->
+                        <div class="slide first">
+                            <img src="images/building1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/building2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/building3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/building4.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Button Navigation Begin -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Slider End -->
+            <div class="slider-btn">
+                <a href="#">
+                    <button class="projects-btn">More Projects</button>
+                </a>
+            </div>
+        </section>
+        <!-- Projects Section End-->
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-container">
+                <img src="images/selene_logo.png" id="f-logo" alt="logo" />
+            </div>
+            <p>We collaborate with ambitious brands and people; let's build something great together.</p>
+            <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <p>Copyright &copy;2020 SELENE</p>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+
+</html>
