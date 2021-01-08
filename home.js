@@ -14,6 +14,41 @@ toTopButton.addEventListener("click", function(){
     window.scrollTo(0,0); // scroll back to the top
 })
 
+/*---------------------Our Statistics------------------ */
+const stats = document.querySelectorAll(".statistics");
+const countBtn = document.getElementById("count-btn");
+
+window.addEventListener("scroll",btnClick)
+
+function btnClick(){
+    if (window.scrollY > 680) {
+    countBtn.click();
+    countBtn.disabled = true}
+}
+
+
+function startCount(){
+stats.forEach(function(statistics){
+    
+    statistics.innerText = "0";
+
+    function updateCounter(){
+        var target = parseInt(statistics.getAttribute("data-stop-count"));
+        var counter = parseInt(statistics.innerText);
+        var increment = target / 1000;
+
+
+        if (counter < target) {
+            statistics.innerText = Math.ceil(counter + increment);
+            setTimeout(updateCounter,1);
+        } else {
+            statistics.innerText = target;
+        }
+    };
+    updateCounter();
+  
+})};
+
 /* ------------------------ Quote of the day ------------------ */
 const quotes =
 [
