@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 html,body{
-    background-color:#A58961;
+    background-color:black; /*nuk pershtatet me grid*/
     box-sizing:border-box ;
     font-family: 'Roboto', sans-serif;
 }
@@ -9,8 +9,8 @@ html,body{
     margin-left: auto;
     margin-right: auto;
     display: block;
- 
 }
+
 
 /*fillimi per vetine grid*/
 
@@ -67,19 +67,20 @@ background: url("https://i.pinimg.com/originals/f3/d5/39/f3d5399534fdbd3cea2810f
  .about-section {
    background: url(foto.jpg) no-repeat left;
    background-size: 55%;
-   background-color: #f5ebe0;
+   background-color: #A58961; /*qeta ndodhe qe duhet me ndrru*/
    overflow: hidden;
    padding:100px 0;
-
  }
  
  .inner-container{
+   background: url(logo.svg) no-repeat;
    width:55%;
    float:right;
    background-color: #f5ebe0;
    padding:150px;
 
  }
+ 
  .inner-container h1 {
    margin-bottom: 30px;
    font-size: 30px;
@@ -99,3 +100,113 @@ background: url("https://i.pinimg.com/originals/f3/d5/39/f3d5399534fdbd3cea2810f
    font-weight: 700;
    font-size:13px;
  }
+
+/*ajo pjesa ne fillim*/
+section {
+  position:relative;
+  width:100%;
+  padding:0 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+ /* background-color: red;*/
+}
+.content
+{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+position:relative;
+max-width:600px;
+}
+.content .textBox h2 {
+
+color: white;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: #53505A;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+.content .textBox p {
+  color: #F5EBE0;
+  /*per padding*/
+  padding-right: 10px;
+}
+.content .textBox a {
+  background: #A58961;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    /* background: white; */
+    color: #53505A;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox {
+  width:600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+ 
+
+}
+.content .imgBox img {
+max-width:400px;
+
+}
+.fotot 
+{
+  position:absolute;
+  left:50%;
+  bottom:20px;
+  transform: translateX(-50%);
+  display:flex;
+
+}
+.fotot li
+{
+  list-style:none;
+  display:inline-block;
+  margin:0 20px;
+  cursor:pointer;
+}
+.fotot li:hover {
+  transform: translateY(-15px);
+}
+.fotot li img {
+   max-width:60px;
+}
+.rrumbullaksimi
+{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: #A58961;
+    border: double #53505A 5px;
+}
+.fotoja {
+  background: url(shpia.svg);
+    background-size: 90px;
+    background-repeat: repeat-x;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 1.5em;
+    color: white;
+    /* border: solid red; */
+    padding-bottom: -100px;
+}
