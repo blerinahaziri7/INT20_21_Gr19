@@ -544,7 +544,7 @@ footer{
     right: 25px;
     width: 500px;
     height: 400px;
-    background: black;
+    background: #0c1116;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,6 +572,53 @@ footer{
     border: 2px solid rgba(255,255,255,1);
 }
 /* ------------------------ About Us Section Ending ------------------ */
+/*----------------- Our Statistics --------------------- */
+
+.stat-container{
+    background: #0c1116;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    min-height: 220px;
+}
+
+.stat-heading{
+    margin-top: 10px;
+}
+
+.stat-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.stat-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.stat-box i {
+    transition: 0.3s ease-in-out;
+}
+
+.stat-box i:hover {
+    transform: translateY(-5px);
+    
+}
+
+.statistics{
+    font-size: 30px;
+}
+
+
 
 /* ------------------------ Quote of the day Start ------------------ */
 .quote-container{
@@ -673,7 +720,7 @@ footer{
 /* ------------------------ Architects Section Start ------------------ */
 .arch-container{
     position: relative;
-    background: black;
+    background: #0c1116;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -734,6 +781,7 @@ footer{
     visibility: hidden;
     opacity: 0;
     transition: 0.4s ease-in-out;
+    color: #22313f;
 }
 
 .arch-container .arch-card:hover .arch-content{
@@ -760,4 +808,13 @@ footer{
 
 .arch-text p{
     margin-top: 10px;
+}
+
+.arch-text h1{
+    transition: 0.3s ease-in-out 0s;
+}
+
+.arch-text h1:hover{
+    transform: translateY(-5px);
+    text-shadow: 3px 0px 20px rgba(0, 172, 238, 0.3);;
 }
