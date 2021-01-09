@@ -6,6 +6,7 @@
 
 body{
     background-color:rgb(221, 210, 210);
+    height: 1050px;
 }
 
 
@@ -13,10 +14,34 @@ body{
      
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height:500px;
+    margin-top: 20px;
+    
+    height:150px;
 }
+
+.audio{
+    margin-top: 100px;
+    display:inline-block;
+    height: 120px;
+    width:300px;
+    padding-left:35%;
+}
+.button-try{
+    padding-top: 150px;
+    height: 50px;
+    width:300px;
+    padding-left:35%;
+
+  
+}
+
+.button-try2{
+    height:150px;
+    width:150px;
+    padding-left:95%;
+    margin-bottom: 30px;
+}
+
 .text-content{
     text-align: center;
     padding-top: 20px;
@@ -27,14 +52,9 @@ body{
     padding-top:90px;
 }
 
-.button-try{
-    padding-top: 120px;
-}
 
-.button-try2{
-    position:absolute;
-    padding-left: 970px;
-}
+
+
 .button-click2{
     display: block;
     color:black;
@@ -45,6 +65,10 @@ body{
     width:150px;
     height: 150px;
     margin:0 auto;
+
+  
+
+    
 }
 
 .button-click{
@@ -55,18 +79,30 @@ body{
     background-color: cornflowerblue;
     border-radius: 30px 30px 30px 30px;
     width:300px;
-    height: 45px;
-    margin:0 auto;
+    height: 60px;
+    padding-top: 20px;
+    
+    transition-duration:350ms;
+    transition-property: margin-left, margin-right;
 }
 
-.audio{
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
+.button-click:hover{
+    
+    
+    margin-left: 200px;
+    margin-right: 200px;
+ }
 
 
+.button-click2:hover{
+   
+    border-radius: 70px 70px 70px 70px;
+    width:120px;
+    height: 120px;
+    
+  }
+  
+  
 
 
     
