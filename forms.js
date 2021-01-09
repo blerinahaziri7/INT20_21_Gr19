@@ -26,7 +26,7 @@ function validation()
   }
 
  
-   function validation1(){
+  function validation1(){
     var form1=document.querySelector("#form1");
     var mobile=document.querySelector("#phonenumber").value;
     var pattern1=/^[\d,\s,\+,\-]{5,20}/;
@@ -47,7 +47,6 @@ function validation()
 }
 
 }
-
 function validation2(){
     var form=document.querySelector("#form1");
     var name=document.querySelector("#fname").value;
@@ -69,3 +68,29 @@ function validation2(){
 }
 
 }
+
+
+
+function ErrorHandling(){
+  var username=document.querySelector("#username").value;
+  var email=document.querySelector("#email").value;
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/ ;
+  var pattern2=/^[a-z\d]+$/;
+  
+   
+   try {if (username.match(pattern2));
+     throw "Username is not valid";
+     
+  }
+  catch(err){
+    alert(err);
+  }
+  
+
+  try {if (email.match(pattern))
+    throw "Email is valid";
+  }
+  catch(err) {
+    alert(err);
+  }
+  }
