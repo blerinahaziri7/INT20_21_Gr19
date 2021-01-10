@@ -122,3 +122,24 @@ input:focus .input{
 .social-icons div.google{
   background: #fb4f4f;
 }
+
+
+.title2 {
+  text-shadow: 2px 2px  #dedee2;
+  color: #535274;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.button2 {
+
+  background: #827ffe;
+  text-align: center;
+  
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgba(34, 31, 31, 0.4);
+  transition: 0.2s;
+}
