@@ -6,7 +6,12 @@
 #maindiv{
   width: 100%;
   height: 100vh;
-  background: url("images/3.jpg") top center;
+  background: url("images/3.jpg") 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
   background-size: cover;
   position: relative;
 }
@@ -66,9 +71,65 @@
     color: #fff;
   }
   #maindiv #maindiv_content .container .button_getStarted:hover{
-    background: rgb(189, 161, 3);
-    border-color: rgb(189, 161, 3);
+    background:#f2aa4cff;
+    border-color:#f2aa4cff;
   }
+
+  .theFirm .container .image_theFirm{
+  float: right;
+  margin-right: 230px;
+
+    
+}
+
+
+.theFirm{
+    display: block;
+  
+    padding: 60px;
+    overflow: hidden;
+ 
+}
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    scroll-margin-inline-end: 0px;
+
+}
+.content_theFirm{
+  width: 700px;
+  margin-left: 80px;
+  margin-top:30px;
+}
+
+.content_theFirm h3{
+    font-weight: 600;
+    font-size: 26px;
+    color: #f2aa4cff;
+}
+
+.content_theFirm .font-italic{
+    font-style: italic;
+
+}
+
+.content_theFirm p{
+    color: #c1c1c1;
+    font-size: 17px;
+
+}
+.audio{
+    margin-top: 100px;
+    
+    height: 120px;
+    width:300px;
+    padding-left: 62%;
+
+}
 
 
 
