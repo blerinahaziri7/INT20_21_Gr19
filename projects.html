@@ -8,6 +8,32 @@
     <link rel="stylesheet" type="text/css" href="projects_style.css">
     <link rel="icon" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
+
+    <!-- Inline JavaScript to change Background Color on timer -->
+    <script>
+        var i = 0;
+        function changeBgColor() {
+            var colorPalette = ["rgba(0, 0, 0, 0.05)", "rgba(0, 0, 0, 0.15)",
+            "rgba(0, 0, 0, 0.25)", "rgba(0, 0, 0, 0.35)"];
+            var divToChange = document.getElementById("hotel-sliders");
+            divToChange.style.backgroundColor = colorPalette[i];
+
+            if (i == 0) {
+                order = "ascending";
+            }
+            else if (i == (colorPalette.length - 1)) {
+                order = "descending";
+            }
+
+            switch(order) {
+                case "ascending": i++;
+                break;
+                case "descending": i--;
+                break;
+            }
+        }
+        setInterval(changeBgColor, 2000);
+    </script>
 </head>
 
 <body>
