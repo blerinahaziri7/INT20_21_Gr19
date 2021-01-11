@@ -10,7 +10,9 @@
 
 
 body{
-    background: linear-gradient(to right,#3525af,#9153c9);
+    background: url(images/background_1.png);
+    
+
 }
  .resume{
      width: 800px;
@@ -49,7 +51,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-bottom: 10px;
-    color: #3525af;
+    color: #fdc835;
     position: relative;
     text-align: right;
     margin-bottom: 15px;
@@ -103,7 +105,7 @@ body{
 .skills .li_wrap:hover .text,
 .hobbies .li_wrap:hover .icon,
 .hobbies .li_wrap:hover .text {
-    color:#9153c9;
+    color:#fdc835;
 }  
 
 .header {
@@ -117,7 +119,7 @@ body{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #3525af;
+    color: #fdc835;
 }
 
 .header .role {
@@ -148,7 +150,7 @@ body{
 
 .right_inner .li_wrap .date{
     width: 125px;
-    color:#9153c9
+    color:#292b2f;
 
 }
 .right_inner .li_wrap .date .info{
@@ -161,7 +163,7 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    color:#9153c9;
+    color:#fdc835;
    
     
 }
@@ -187,7 +189,10 @@ body{
     padding: 15px;
     margin-left: 10px;
     border-spacing: none;
-   color:#9153c9;
+   color:#fdc835;
+}
+td{
+    color:black;
 }
 
 #Table {
