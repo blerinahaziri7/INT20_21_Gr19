@@ -131,3 +131,95 @@ $("#to-top-btn").on('click', function() {
   if (typeof(Storage) !== "undefined") {
       sessionStorage.toTopCount = count;
   }});
+
+/*-------------------Drag and Drop section-------------------------*/
+$(document).ready(function () {  // toggles the game
+    $(".game-content").hide();
+    var playCount = 0;
+    $("#play-btn").click(function () {
+        playCount++;
+        if (playCount % 2 != 0) {
+            $("#play-btn").html("Collapse");
+            $(".home-game h2").html("Find the word");
+        }
+        else {
+            $("#play-btn").html("Let's play a game");
+            $(".home-game h2").html("Did you get tired scrolling?");
+        }
+        $(".game-content").slideToggle(1000);
+    })
+})
+
+const boxElements = document.querySelectorAll(".box");
+
+// add event listeners
+boxElements.forEach(elem => {
+    elem.addEventListener("dragstart", dragStart);
+    elem.addEventListener("dragend", dragEnd);
+    elem.addEventListener("dragenter", dragEnter);
+    elem.addEventListener("dragover", dragOver);
+    elem.addEventListener("dragleave", dragLeave);
+    elem.addEventListener("drop", drop);
+
+    // Drag and Drop Functions
+
+    function dragStart(event) {
+        event.target.classList.add("drag-start");
+        event.dataTransfer.setData("text", event.target.id);
+    }
+
+    function dragEnd(event) {
+        event.target.classList.remove("drag-start");
+    }
+
+    function dragEnter(event) {
+        if (!event.target.classList.contains("drag-start")) {
+            event.target.classList.add("drag-enter");
+        }
+    }
+
+    function dragOver(event) {
+        event.preventDefault();
+    }
+
+    function dragLeave(event) {
+        event.target.classList.remove("drag-enter");
+    }
+
+    var word = "";
+
+    function drop(event) {
+        event.preventDefault();
+        event.target.classList.remove("drag-enter");
+        const draggableElementId = event.dataTransfer.getData("text");
+        const droppableElementId = event.target.id;
+        if (draggableElementId !== droppableElementId) {
+            const draggableElement = document.getElementById(draggableElementId);
+            const droppableElementBgColor = event.target.style.backgroundColor;
+            const droppableElementTextContent = event.target.querySelector("span").textContent;
+
+            event.target.style.backgroundColor = draggableElement.style.backgroundColor;
+            event.target.querySelector("span").textContent = draggableElement.querySelector("span").textContent;
+            event.target.id = draggableElementId;
+            draggableElement.style.backgroundColor = droppableElementBgColor;
+            draggableElement.querySelector("span").textContent = droppableElementTextContent;
+            draggableElement.id = droppableElementId;
+
+            // get the word created by the user
+            $(".box > .letter").each(function () {
+                word += $(this).text();
+            })
+            console.log(word);
+
+            // check if the word is correct
+            if (word === "ARCHITECT") {
+                $(".box").addClass("correct");
+                word = "";
+            }
+            else {
+                $(".box").removeClass("correct");
+                word = "";
+            }
+        }
+    }
+});
