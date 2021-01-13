@@ -9,6 +9,48 @@
     <link rel="icon" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // change day/night mode
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var now = new Date().getHours();
+
+            var aboutSection = document.querySelector(".about-container");
+            var aboutCard = document.querySelectorAll(".arch-card");
+            var quoteSection = document.querySelector(".quote-container");
+            var projectsSection = document.querySelector(".homepage-projects");
+
+            var texts = document.querySelectorAll(".about-contentBox h1, .about-contentBox p, .quote-heading, .quote, #already-picked, .arch-text, .arch-content, #slider-heading, #slider-subheading"); //select all the texts that need to change
+
+
+            function adjustColorMode() {
+                // Remove any existing classes
+                aboutSection.classList.remove('night');
+                aboutCard[0].classList.remove('night');
+                aboutCard[1].classList.remove('night');
+                quoteSection.classList.remove('night');
+                projectsSection.classList.remove('night');
+
+
+                // If it's nighttime, go dark mode
+                if (!(now > 9 && now < 20)) {
+                    aboutSection.classList.add('night');
+                    aboutCard[0].classList.add('night');    // add class to the first card
+                    aboutCard[1].classList.add('night');    // add class to the second card
+                    quoteSection.classList.add('night');
+                    projectsSection.classList.add('night');
+
+                    for (let i = 0; i < 10; i++) {
+                        texts[i].style.color = "#cecece";   // change color of every element of texts
+                    }
+                }
+            };
+
+            adjustColorMode();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -204,7 +246,9 @@
         <section id="home-projects" class="homepage-projects">
             <div class="slider-title">
                 <h1 id="slider-heading">Projects</h1>
-                <p id="slider-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita laborum eaque quam, impedit maxime, animi nisi esse labore reiciendis atque blanditiis. Vitae eos nulla natus enim ipsam maiores aperiam debitis?</p>
+                <p id="slider-subheading">Below you can take a look at our featured and recent projects that have been
+                    numerously awarded for
+                    our unique architectural approach.</p>
             </div>
             <!-- Slider Begin -->
             <div class="entire-slider">
@@ -249,7 +293,7 @@
         <!--------------------- Projects Section End------------------------->
 
 
-             <!--------------Drag and Drop section------------------------->
+        <!--------------Drag and Drop section------------------------->
         <!--
         A R C H I T E C T
 
