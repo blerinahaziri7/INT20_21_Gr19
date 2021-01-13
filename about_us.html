@@ -9,6 +9,7 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -124,6 +125,45 @@
 </div>
 <!--Perfundimi per About us-->
 
+<!--Pjesa per our team-->
+<div class="image-container_a">
+    <div class="image_a" onclick="fetch_info(0)"><img src="qika1.jpg" alt="foto"/></div>
+    <div class="image_a" onclick="fetch_info(1)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onclick="fetch_info(2)"><img src="qika1.jpg" alt="foto"/></div>
+    <div class="image_a" onclick="fetch_info(3)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onclick="fetch_info(4)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onclick="fetch_info(5)"><img src="qika1.jpg" alt="foto"/></div>
+</div>
+<div class="info-container_a">
+    <img class="profile_a" id="profile_a" src="architecture1.jpg"/>
+    <div class="info_a">
+            <h1 class="name_a" id="name_a">Selene Arch.</h1>
+            <h3 class="status_a" id="status_a">Company</h3>
+            <p class="about_a" id="about_a">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis, reprehenderit quae nam nisi dolorem et at cupiditate
+                enim commodi animi aliquam non facere maiores itaque,
+                aspernatur, quas perspiciatis sed inventore.
+            </p>
+        </div>
+</div>
+<script>
+    function fetch_info(i){
+            let profiles_a=["qika1.jpg","djali1.jpg","qika1.jpg","djali1.jpg","djali1.jpg","qika1.jpg"];
+            let name_a=['Blerina Haziri','Ensar Shaqiri','Era Tahiri','Fidan Hoxha','Fisnik Mustafa','Fjoralba Krasniqi'];
+            let status_a=["Founder","Founder","Founder","Founder","Founder","Founder"];
+            let about_a=["Pershkrim","Pershkrim","Pershkrim","Pershkrim","Pershkrim","Pershkrim"];
+            
+            document.getElementById("profile_a").src=profiles_a[i];
+            document.getElementById("name_a").innerHTML=name_a[i];
+            document.getElementById("status_a").innerHTML=status_a[i];
+            document.getElementById("about_a").innerHTML=about_a[i];
+        }
+
+</script>
+
+
+<!--Perfundimi i pjeses per our team-->
 
 <!--Perfundimi i our Team section-->
     <!--Grid vetia-->
