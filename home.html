@@ -217,7 +217,7 @@
         <div id="home-architects" class="arch-container">
             <div class="arch-card">
                 <div class="arch-imgBox">
-                    <img src="./images/eliza.jpg" alt="">
+                    <img src="./images/eliza.jpg" alt="Eliza Hoxha">
                 </div>
                 <div class="arch-content">
                     <h2>Eliza Hoxha</h2>
@@ -233,7 +233,7 @@
 
             <div class="arch-card">
                 <div class="arch-imgBox">
-                    <img src="./images/elsa_koshi.jpg" alt="">
+                    <img src="./images/elsa_koshi.jpg" alt="Elsa Koshi">
                 </div>
                 <div class="arch-content">
                     <h2>Elsa Koshi</h2>
@@ -350,6 +350,17 @@
         </div>
     </footer>
     <script src="home.js"></script>
+
+    <script>
+        if (navigator.serviceWorker) {                                           //check if browser supports serviceWorker
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register('./service-worker.js')
+                    .then(reg => console.log("Service Worker: Registered!"))     //if registered successfully, console log
+                    .catch(err => console.log(`Service Worker: Error: ${err}`)); //if registration fails, console log err
+            });
+        };
+    </script>
 </body>
 
 </html>
