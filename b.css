@@ -88,11 +88,11 @@
      margin-bottom: 30px;
      font-size: 30px;
      font-weight:900;
-  
+     text-align: center;  
    }
    .text{
-     font-size:13px;
-     color:#A58961;
+     font-size:20px;
+     color:#53505A;
      line-height:30px;
      text-align: center;
      margin-bottom: 40px;
@@ -115,7 +115,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    
    /* background-color: red;*/
   }
   .content
@@ -217,8 +217,8 @@
       background-size: 90px;
       background-repeat: repeat-x;
       background-origin:border-box ;
-      margin-top: 40px;
-      margin-bottom: 30px;
+      margin-top: 55px;
+      margin-bottom: 55px;
       padding: 1.5em;
       color: white;
       /* border: solid red; */
@@ -383,8 +383,9 @@
   .blerina {
     
     margin: 0;
+    margin-bottom: 65px;
     padding: 0;
-    
+    background-image: url('qytetet.JPG');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -392,14 +393,23 @@
     text-align: center;
     height: 100vh;
     color: white;
+    background-size: 600px;
   }
   
   #time {
-    font-size: 8rem;
+    font-size: 80px;
+    border:solid #A58961;
+    background-color:  #53505A;
+    color:bisque;
   }
+  
   
   .blerina h1 {
     margin-bottom: 3rem;
+    font-size: 50px;
+    border:solid #A58961;
+    background-color:  #53505A;
+    color:bisque;
   }
   
   .blerina h2 {
@@ -412,4 +422,47 @@
       font-size: 6rem;
     }
   }
-  
+  .image-container_a {
+    margin-top: 20px;
+  }
+
+  /*Per forme*/
+  .comentBox {
+    padding: 1%;
+    width:96%;
+    border:1px solid #000;
+    background-color: #f0f0f0;
+    margin-bottom:10px;
+  }
+  .leftPaneImg{
+    width:10%;
+  float:left;
+  }
+  .leftPaneImg img{
+    border-radius:100%;
+  }
+  .rightPanel {
+    width: 85%;
+    float: right;
+    display: inline;
+    margin-left: 1%;
+    padding: 0px;
+    margin-top: -80px;
+  }
+  .clear {
+    clear:both;
+  }
+  .form {
+    padding:10px;
+    border:5px solid #A58961;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .form input[type="text"],.form textarea,.form input[type="date"] {
+  border:3px solid #A58961;
+  padding:2px;
+  width:300px;
+  }
+  .form h5{
+    text-align: center;
+  }
