@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us | Mission and Vision | Selene Architecture</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="b.css">
     <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
+    
+
 </head>
 
 <body>
     <section id="banner-section">
         <header>
             <div class="logo-container">
-                <img src="images/selene_logo.png" id="logo" alt="logo" />
+              <img src="images/selene_logo.png" id="logo" alt="logo" />
 
             </div>
 
@@ -22,7 +26,7 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about_us.html">ABOUT US</a></li>
                     <li><a href="#">PROJECTS</a></li>
-                    <li><a href="architect.html">ARCHITECTS</a></li>
+                    <li><a href="clients.html">CLIENTS</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
@@ -49,15 +53,177 @@
                 </div>
             </div>
         </header>
-    </section>
 
+    </section>
+    <!--Per kohe-->
+<div class="blerina">
+    <time id="time"></time>
+        <h1>
+          <span id="greeting"></span>
+        </h1>
     
+       
+    </div>
+    <script src="bl.js" type="text/javascript">
+    </script>
+    <!--Per kohe perfundimi-->
+    
+    <!--Per arkitekture ne pergjithsi-->
+    <section>
+        <div class="rrumbullaksimi"></div>
+       <div class="content">
+          <div class="textBox">
+              <!--Efekti per arkitekture-->
+              <div class="container_t">
+                <h1>
+                  <span class="txt-type" data-wait="3000" data-words='["Architecture", "Creativity", "Hard Work"]'></span>
+                </h1>
+                <h2>is what <br>we love</h2>
+              </div>
+              <script src="b.js"></script>
+              <!--Perfunidmi i saj-->
+            
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aut mollitia fugit quis blanditiis error ut,
+                 adipisci possimus eveniet hic eligendi explicabo ex magni architecto.
+                  Suscipit optio consequatur commodi eos.</p><!--Me u lidhe me clients-->
+                  <a href="index.html">Learn more</a>
+          </div>
+          <div class="imgBox">
+              <figure>
+             <img src="arch1234.jpg" class="change">
+             <figcaption><q style="font-size: 14px; color:rgb(112, 109, 109);">There are 360 degrees, so why stick to one?</q></figcaption>
+              </figure>
+              
+          </div>
+
+       </div>
+       <ul class="fotot">
+          <li ><img src="arch1234.jpg" onclick="Ndrrimi_i_fotove('arch1234.jpg')"></li>
+          <li ><img src="arch1.jpg" onclick="Ndrrimi_i_fotove('arch1.jpg')"></li>
+          <li ><img src="inside.jpg" onclick="Ndrrimi_i_fotove('inside.jpg')"></li>
+       </ul>
+        
+
+       
+     </section>
+     <script type="text/javascript">
+     var qkado;
+        function Ndrrimi_i_fotove(qkado){
+           document.querySelector('.change').src=qkado;
+
+        }
+
+        </script>
+
+ <!--Per arkitekture perfundimi-->
+
+ <!--Para videos po doket shume thate-->
+</div>
+ <div class="fotoja">
+     
+</div>
+
+<!--Video-->    
+<div >
+    <video class="center" controls poster="projekti_foto.jpg" style="margin-top: -10px;">
+        <source src="My Video-1.mp4" type="video/mp4">
+    </video>
+</div>
+<!--Perfundimi i videos-->
+
+
+<!--Fillimi per About US-->
+<div class="about-section">
+    <div class="inner-container">
+        <h1>About Us</h1>
+        <p class="text">We are 6 individuals with passion for creativity-creativity makes us happy. We truly believe
+            in the transformative power of architecture and design and their ability to engage people and the way foreign citizens
+            see a country. Good projects and design come from collaboration and we are excited to learn about you and make something 
+            beautiful together.
+        </p>
+         
+        <button></button>
+        <div class="skills">
+            <span style="padding-left: 150px;">Architecture</span>
+            <span style="padding-left: 0px;">& Interior Design</span>
+        </div>
+    </div>
+</div>
+<!--Perfundimi per About us-->
+
+<!--Pjesa per our team-->
+<div class="image-container_a">
+    <div class="image_a" onmouseover="fetch_info(0)"><img src="qika1.jpg" alt="foto"/></div>
+    <div class="image_a" onmouseover="fetch_info(1)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onmouseover="fetch_info(2)"><img src="qika1.jpg" alt="foto"/></div>
+    <div class="image_a" onmouseover="fetch_info(3)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onmouseover="fetch_info(4)"><img src="djali1.jpg" alt="foto"/></div>
+    <div class="image_a" onmouseover="fetch_info(5)"><img src="qika1.jpg" alt="foto"/></div>
+</div>
+<div class="info-container_a">
+    <img class="profile_a" id="profile_a" src="architecture1.jpg"/>
+    <div class="info_a">
+            <h1 class="name_a" id="name_a">Selene Arch.</h1>
+            <h3 class="status_a" id="status_a">Company</h3>
+            <p class="about_a" id="about_a">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis, reprehenderit quae nam nisi dolorem et at cupiditate
+                enim commodi animi aliquam non facere maiores itaque,
+                aspernatur, quas perspiciatis sed inventore.
+            </p>
+        </div>
+</div>
+<script>
+    function fetch_info(i){
+            let profiles_a=["qika1.jpg","djali1.jpg","qika1.jpg","djali1.jpg","djali1.jpg","qika1.jpg"];
+            let name_a=['Blerina Haziri','Ensar Shaqiri','Era Tahiri','Fidan Hoxha','Fisnik Mustafa','Fjoralba Krasniqi'];
+            let status_a=["Founder ","Founder ","Founder ","Founder ","Founder ","Founder "];
+            let about_a=["Pershkrim","Pershkrim","Pershkrim","Pershkrim","Pershkrim","Pershkrim"];
+            
+            document.getElementById("profile_a").src=profiles_a[i];
+            document.getElementById("name_a").innerHTML=name_a[i];
+            document.getElementById("status_a").innerHTML=status_a[i];
+            document.getElementById("about_a").innerHTML=about_a[i];
+        }
+
+</script>
+
+
+<!--Perfundimi i pjeses per our team-->
+
+<!--Perfundimi i our Team section-->
+    <!--Grid vetia-->
+<div class="container">
+    <div class="arkitektet" >
+        <a href="index.html"><h2><i class="fa fa-user"></i></h2></a>
+        <p style="color:white; ">Architects</p>
+    </div>
+    <div class="projektet">
+        <p style="color:white; ">Projekts No.</p>
+        
+    </div>
+    <div class="students">
+        <h2><a href=""><i class="fa fa-user-graduate"></i></h2>
+        <p style="color:white; "><abbr title="Architecture">Arch</abbr> Student</p> 
+
+    </div>
+    
+</div>
+<!--Per kohe-->
+
+<!--Per kohe perfundimi-->
+
+
+ 
     <footer>
-        <div class="footer-content">
+        <div class="footer-c">
             <div class="footer-logo-container">
                 <img src="images/selene_logo.png" id="f-logo" alt="logo" />
             </div>
-            <p><em>We collaborate with ambitious brands and people;<br>let's build something great together</em></p>
+            <address><p>Faculty of Electrical and Computer Engineering
+                Kodra e diellit, p.n.
+                10000 Prishtina
+                Kosova</p></address>
             <ul class="socials">
                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
                 <li><a href=""><i class="fa fa-twitter"></i></a></li>
@@ -66,7 +232,10 @@
             </ul>
             <p>Copyright &copy;2020 SELENE</p>
         </div>
+        
     </footer>
 </body>
+
+
 
 </html>
