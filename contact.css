@@ -7,8 +7,17 @@
 }
 
 body{
-  background: #7f7df9;
+  width: 100%;
+  background: url("arch11.jpg") 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
 }
+
 
 .contact-us{
   width: 350px;
