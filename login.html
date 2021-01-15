@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/e60e897786.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png">
+    <script src="forms.js"></script>
+    <title>Welcome to Selene</title>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-icons">
+                
+               <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a> 
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i> </a>
+                <a href="gmail.com"><i class="fab fa-google-plus-g"></i> </a>
+           
+            </div>
+            <form  id="login" class="input">
+                <input type="text" class="input-field" id="user" placeholder="User Id"  onkeydown="Validation()"  required> 
+                 <span id="text"></span></br>
+                 <input type="password" class="input-field" id="psw" placeholder="Enter Password" onkeydown="Validation1()" required>  
+               <span id="text"></span>
+              
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input">
+                <input type="text" class="input-field" id="user" placeholder="User Id" onkeydown="Validation2()" required>
+                <span id="text1"></span>
+                <input type="email" class="input-field" id="email_" placeholder="Email" required onkeydown="Validation3()">
+                <span id="text3"></span>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <span id="text4"></span>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+      
+    </div>
+    <script>
+        var x=document.querySelector("#login");
+        var y=document.querySelector("#register");
+        var z=document.querySelector("#btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>

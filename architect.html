@@ -24,11 +24,11 @@
 
             <nav>
                 <ul class="nav_links">
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="home.html">HOME</a></li>
                     <li><a href="about_us.html">ABOUT US</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="clients.html">CLIENTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="clients.html">ARCHITECTS</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
                 </ul>
             </nav>
 
@@ -59,7 +59,7 @@
     <section id="maindiv">   
         <section id="maindiv_content">  
             <div class="container">
-                <h1>Architects</h1>
+                <h1>Architecture</h1>
                 <h2>Selene is a company specializing in
                   design, construction, planning and
                   consulting in architectural projects where you can work with the best architects in Kosovo</h2>
@@ -67,46 +67,193 @@
               </div>
         </section>    
     </section>
-    
 
-     
-<!-- s
-       <div class="orientation">
-            <div class="text-content">
-                <h1>"A world of difference"</h1>
-                <div class="content">
-                    <p>
-                        "Explore the houses on the street and experience them with and without SELENE."
-                         <br>
-                       "We promise you a world of difference..."
-                    </p>
+    <main>
+        <section class="theFirm">
+            <div class="container_thefirm">
+               
+                <div class="content_theFirm">
+                    <h3 style="font-size: 35px;"> The Firm</h3>
+                <p class="font-italic">
+                  “In an ever-changing world, we believe in the power of design to
+                    create positive change in living and working spaces for everyone”
+                </p>
+                <p>
+                  Selene is an integrated design,
+                  architecture, planning and consulting firm. Our team of professionals
+                  have over 20 years of experience
+                  covering a broad spectrum of industry sectors in Kosovo and around the
+                  world. Selene provides a diverse
+                  range of quality services to clients
+                  with one goal in mind: to bring their vision to life.
+                </p>
+                <p>
+                  As such, we pride ourselves in the
+                  support we provide in our services
+                  from concept to execution. The
+                  success of our firm is rooted in the
+                  hard work put forth by our team and
+                  the referrals made by our satisfield clients.
+                </p>
                 </div>
-        </div>
-
-            <div class="audio">
-                <audio controls>
-                    <source src="audios\Beethoven's 5th Symphony.mp3" type="audio/mp3">
-                </audio>
-                <audio controls>
-                    <source src="audios\Naruto Shippuden Soundtrack 19- Despair [Extended].mp3" type="audio/mp3">
-                  </audio>
-            </div>
-            
-                
-            
-                 
-                <div class="button-try">
-                    <a href="clients.html" class="button-click">Meet our architects</a>
+                <div class="image_theFirm">
+                    <img src="images/Selene.png" alt="logo firm" style="width:320px; height:400px;">
                 </div>
-
-                <div class="button-try2">
-                    <a href="booknow.html" class="button-click2">Book Now!</a>
-                </div>
-
-              
-        </div> -->
-       
+                <div class="audio">
+                    <div class="audio1">
+                        <audio controls>
+                            <source src="audios\Beethoven's 5th Symphony.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
+                        <div class="audio2">
+                        <audio controls>
+                            <source src="audios\Naruto Shippuden Soundtrack 19- Despair [Extended].mp3"  type="audio/mp3">
+                          </audio>
+                       
+                    </div>
+                   </div>
+            </div> 
            
+          </section>
+        
+          <section class="Services">
+              <div class="our_services">
+                
+                  <div class="title">
+                    <span >Our Services</span>
+                    <h2>Our Services</h2>
+                  </div>
+            
+                <div class="container_services">
+                    <div class="services_box">
+                        <div class="icon"><i class="fa fa-comments-o" aria-hidden="true"></i></div>
+                        <div class="content_box">
+                            <h3>Search</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error cum!</p>
+                        </div>
+                    </div>
+                    <div class="services_box">
+                        <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                        <div class="content_box">
+                            <h3>User</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error cum!</p>
+                        </div>
+                    </div>
+                    <div class="services_box">
+                        <div class="icon"><i class="fa fa-building" aria-hidden="true"></i></div>
+                        <div class="content_box">
+                            <h3>Location</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error cum!</p>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              
+          </section>
+
+          <section id="portofolio" class="portofolio">
+            <div class="our_portofolio">
+                <div class="title">
+                    <span >Portofolio</span>
+                    <h2>Portofolio</h2>
+                </div>
+            </div>
+
+            <div id="BtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('filter-residential')"> Residential Projects</button>
+                <button class="btn" onclick="filterSelection('filter-commercial')">Commercial Projects</button>
+                <button class="btn" onclick="filterSelection('filter-administrative')">Administrative Projects</button>
+              </div>
+
+              <div class="row-portfolio-container">
+                
+                <div class="filter-residential">
+                    <img src="images/RSP-1.jpg" class="img_P" alt="">
+                </div>
+                <div class="filter-residential">
+                    <img src="images/RSP-2.png" class="img_P" alt="">
+                </div>
+                  <div class="filter-residential">
+                    <img src="images/CP-1.JPG" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/AP-1.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-3.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/AP-2.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-4.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/CP-2.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/AP-3.jpg" class="img_P" >
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-5.jpg" class="img_P" >
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-6.png" class="img_P" >
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/CP-3.png" class="img_P" >
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-7.png" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/CP-4.png" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-9.jpg" class="img_P" alt="">
+                  </div>
+                  <div class="filter-residential">
+                    <img src="images/RSP-10.jpg" class="img_P" alt="">
+                  </div>
+              </div>
+
+          </section>
+
+          <section class="partnersAndClients">
+              <div class="Clients_Partners">
+                <div class="title">
+                    <span >Clients and Partners</span>
+                    <h2>Clients and Partners</h2>
+                </div>
+              </div>
+
+              <div class="marquee">
+                <div class='marquee-div'>
+                  <div class="shadow">
+                  <ul class="marquee-content">
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-codepen"></i></li>
+                    <li><i class="fab fa-free-code-camp"></i></li>
+                    <li><i class="fab fa-dev"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-vuejs"></i></li>
+                    <li><i class="fab fa-angular"></i></li>
+                    <li><i class="fab fa-node"></i></li>
+                    <li><i class="fab fa-wordpress"></i></li>
+                    <li><i class="fab fa-aws"></i></li>
+                    <li><i class="fab fa-docker"></i></li>
+                    <li><i class="fab fa-android"></i></li>
+                    <li><i class="fab fa-codepen"></i></li>
+      
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    </main>
 
     <footer>
         <div class="footer-content">
@@ -123,6 +270,7 @@
             <p>Copyright &copy;2020 SELENE</p>
         </div>
     </footer>
+    
 </body>
 
 </html>

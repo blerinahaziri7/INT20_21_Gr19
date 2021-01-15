@@ -68,8 +68,117 @@ function validation2(){
 }
 
 }
+//log in validation
+function Validation(){
+  var form=document.querySelector("#login");
+  var user=document.querySelector("#user").value;
+  var pattern=/([A-Za-z._])\w+/g;
+  var text=document.querySelector("#text");
 
 
+  if (user.match(pattern)){
+      form.classList.add("valid");
+      form.classList.remove("invalid");
+      text.innerHTML="You username is valid"; 
+      text.style.color= "purple";
+    }
+    else {
+      form.classList.remove("valid");
+      form.classList.add("invalid");
+      text.innerHTML="Please enter a valid username";
+      text.style.color= "red";
+}
+}
+
+function Validation1(){
+  var form=document.querySelector("#login");
+  var input=document.querySelector("#psw").value;
+  var pattern=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+  var text=document.querySelector("#text");
+
+
+  if (input.match(pattern)){
+      form.classList.add("valid");
+      form.classList.remove("invalid");
+      text.innerHTML="You password is valid"; 
+      text.style.color= "purple";
+    }
+    else {
+      form.classList.remove("valid");
+      form.classList.add("invalid");
+      text.innerHTML="Please enter a valid password";
+      text.style.color= "red";
+}
+}
+// validation of register
+function Validation2(){
+  var form=document.querySelector("#register");
+  var user=document.querySelector("#user").value;
+  var pattern=/([A-Za-z._])\w+/g;
+  var text=document.querySelector("#text1");
+
+
+  if (user.match(pattern)){
+      form.classList.add("valid");
+      form.classList.remove("invalid");
+      text1.innerHTML="You username is valid"; 
+      text1.style.color= "purple";
+    }
+    else {
+      form.classList.remove("valid");
+      form.classList.add("invalid");
+      text1.innerHTML="Please enter a valid username";
+      text1.style.color= "red";
+}
+}
+
+function Validation3()
+{
+  var form =document.querySelector("#register");
+  var email=document.querySelector("#email_").value;
+  var form=document.querySelector("#text3");
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/ ;
+  
+
+
+  if (email.match(pattern)){ 
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text3.innerHTML="Your email Address is Valid"; 
+    text3.style.color= "purple";
+
+  } 
+  else {
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    text3.innerHTML="Please enter valid email address";
+    text3.style.color= "red";
+  }
+
+ 
+  }
+
+  
+function Validation4(){
+  var form=document.querySelector("#register");
+  var input=document.querySelector("#psw").value;
+  var pattern=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
+  var form=document.querySelector("#text4");
+
+
+  if (input.match(pattern)){
+      form.classList.add("valid");
+      form.classList.remove("invalid");
+      text4.innerHTML="You password is valid"; 
+      text4.style.color= "purple";
+    }
+    else {
+      form.classList.remove("valid");
+      form.classList.add("invalid");
+      text4.innerHTML="Please enter a valid password";
+      text4.style.color= "red";
+}
+}
 
 function ErrorHandling(){
   var username=document.querySelector("#username").value;

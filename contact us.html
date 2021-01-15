@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="styles.css">
-  <script src="forms.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script> 
+
 </head>
 <body>
   <section id="banner-section">
@@ -22,7 +21,7 @@
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="about_us.html">ABOUT US</a></li>
                 <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="clients.html">CLIENTS</a></li>
+                <li><a href="architect.html">ARCHITECTS</a></li>
                 <li><a href="contact us.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -51,12 +50,15 @@
     </header>
 </section>
 
-<div class="contact-us">
+<div>
+  <form class="contact-us" action="mailto:selene.architecture@gmail.com" method="POST">
   <div class="title">
     <h1>Contact us</h1>
   </div>
+
   <div class="form">
     <div class="form-items" >
+
       <input type="text" class="input" id="username" placeholder="Full name" >
      <span id="text"></span> <br>
       <i class="fas fa-user"></i>
@@ -74,11 +76,15 @@
   </div>
 
   <div class="btn" onclick="ErrorHandling()">
-    Submit
+    <button type="submit"  style="padding: 12px; width: 180px; height: 35px ;border-radius: 25px; border: none; background-color: transparent; color: white;
+    letter-spacing: 5px;">Write email</button> 
     <i class="fas fa-arrow-right"></i>
   </div>
-
-
+  <br>
+  <div class="btn">
+    Submit
+  </div>
+  
   <div class="social-icons">
     <div class="facebook">
       <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
@@ -90,7 +96,7 @@
       <a href="https://myaccount.google.com/"><i class="fab fa-google-plus-g"></i></a>
     </div>
   </div>
-
+  </form>
 </div>
 
 
