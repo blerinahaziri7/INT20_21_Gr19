@@ -324,3 +324,91 @@ border-radius: 5px;
 
 }
 
+/*Per pjesen te architecture*/
+.container_t {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.container_t h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.container_t h1 {
+  font-size: 3.5rem;
+  color:white;
+}
+
+.container_t h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid white;
+}
+
+@media(min-width: 1200px) {
+  .container_t h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container_t {
+    padding: 0 1rem;
+  }
+
+  .container_t h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .container_t h1 {
+    font-size: 2.5rem;
+  }
+
+  .container_t h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*per kohe*/
+.blerina {
+  
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+}
+
+#time {
+  font-size: 8rem;
+}
+
+.blerina h1 {
+  margin-bottom: 3rem;
+}
+
+.blerina h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 6rem;
+  }
+}
