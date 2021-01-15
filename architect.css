@@ -136,6 +136,7 @@ main{
     width:1200px;
     height: 300px;
     margin: 90px auto;
+   
 }
   
 .container_services .services_box{
@@ -236,7 +237,29 @@ main{
 
 
 /* PORTOFOLIO */
+.portofolio 
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: #f2aa4cff;
+  }
 
+  .btn:hover {
+    background-color: rgb(42, 52, 63);
+    color:#e9ebee;
+  }
+  .btn.active {
+    background-color:#101820ff;
+    color:#f2aa4cff;
+  }
+  #BtnContainer{
+padding-top: 50px;
+text-align: center;
+
+  }
 
 .row-portfolio-container{
     position: relative;
@@ -248,6 +271,7 @@ main{
     grid-template-columns: auto auto auto;
     grid-gap:2vh;
     grid-auto-flow: dense;
+    margin-bottom: 60px;
 }
 
 main .row-portfolio-container .filter-residential{
@@ -297,10 +321,86 @@ main .row-portfolio-container .filter-residential:hover img{
  filter: brightness(1) grayscale(0);
      
  }
+.marquee-content li{
+    color:#B9CBC5;
+}
+
+.marquee{
+    font-family: 'Montserrat', sans-serif;
+    
+    color:#111;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+   
+    padding-top: 80px;
+}
+
+.marquee .marquee-div{
+    background-color: #F5F5F5;
+    color:tomato;
+    width:80vw;
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
 
 
+.shadow{
+    position: absolute;
+    overflow: hidden; 
+    width:80vw;
+    height:20vh;
+}
 
- 
+.shadow:before{
+    position: absolute;
+    top:0;
+    width:10rem;
+    height:100%;
+    content:"";
+    z-index: 1;
+    left:0;
+    background: linear-gradient(to right, #E0E0E0 0%, transparent 100%);
+  }
+
+  .shadow:after{
+    position: absolute;
+    top:0;
+    width:10rem;
+    height:100%;
+    content:"";
+    z-index: 1;
+    right:0;
+    background: linear-gradient(to left,#E0E0E0 0%, transparent 100%);
+ }
+
+   .marquee .marquee-content:hover{
+       animation-play-state: paused;
+   } 
+.marquee  .marquee-content{
+    list-style: none;
+    height: 100%;
+    display:flex;
+    animation: scrolling 10s linear infinite; 
+}
+
+
+@keyframes scrolling{
+0% { transform: translateX(0);}
+100% { transform: translateX(-180vw);}
+}
+.marquee  .marquee-content li{
+   width: 20vw;
+   flex-shrink: 0;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 5rem;
+   white-space: nowrap;
+}
 
 
 
