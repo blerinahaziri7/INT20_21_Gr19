@@ -39,18 +39,15 @@ function setBgGreet() {
 
   if (hour < 12) {
     // Morning
-    document.body.style.backgroundImage = "url('https://images.designtrends.com/wp-content/uploads/2015/11/06084012///////??Abstract-Brown-Leather-Background.jpg')";
-    greeting.textContent = 'Mornings come with a blank canvas. Paint it as you like and call it a day. Wake up now and start creating your perfect day. Good morning from our team ! <br> Stay Home and Stay safe while you learn more about our amazing architects...  ';
+    greeting.textContent = 'Good morning from our team ! Scroll down se you can learn more about us...  ';
     document.blerina.style.color = 'white';
   } else if (hour < 18) {
     // Afternoon
-    document.blerina.style.backgroundImage = "url('https://upload.wikimedia.org/wikipedia/commons/6/65/Prishtina_at_night.jpg')";
-    greeting.textContent = 'Good Afternoon, ';
+    greeting.textContent = 'Good Afternoon from our team ! Scroll down se you can learn more about us...';
     document.blerina.style.color = 'white';
   } else {
     // Evening
-    //document.body.style.backgroundImage = "url('https://i.ibb.co/924T2Wv/night.jpg')";
-    greeting.textContent = 'Good Evening, ';
+    greeting.textContent = 'Good Evening from our team ! Scroll down se you can learn more about us...';
     document.blerina.style.color = 'white';
   }
 }
