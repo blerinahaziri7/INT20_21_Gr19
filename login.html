@@ -27,20 +27,20 @@
            
             </div>
             <form  id="login" class="input">
-                <input type="text" class="input-field" id="user" placeholder="User Id"  onkeydown="Validation()"  required> 
+                <input type="text" class="input-field" id="user" placeholder="User Id"  onkeydown="Validation()"  required autocomplete="off"> 
                  <span id="text"></span></br>
-                 <input type="password" class="input-field" id="psw" placeholder="Enter Password" onkeydown="Validation1()" required>  
+                 <input type="password" class="input-field" id="psw" placeholder="Enter Password" onkeydown="Validation1()" required autocomplete="off">  
                <span id="text"></span>
               
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="submit" class="submit-btn">Log In</button>
             </form>
             <form id="register" class="input">
-                <input type="text" class="input-field" id="user" placeholder="User Id" onkeydown="Validation2()" required>
+                <input type="text" class="input-field" id="user" placeholder="User Id" onkeydown="Validation2()" required autocomplete="off">
                 <span id="text1"></span>
-                <input type="email" class="input-field" id="email_" placeholder="Email" required onkeydown="Validation3()">
+                <input type="email" class="input-field" id="email_" placeholder="Email" required onkeydown="Validation3()" autocomplete="off">
                 <span id="text3"></span>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required onkeydown="Validation4()" autocomplete="off">
                 <span id="text4"></span>
                 <input type="checkbox" class="check-box"><span>I agree to the terms and condition</span>
                 <button type="submit" class="submit-btn">Register</button>
