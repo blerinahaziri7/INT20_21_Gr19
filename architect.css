@@ -563,28 +563,6 @@ main .row-portfolio-container .filter-residential:hover img{
     color: white
   }
 
-  .more_clickHere {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 28px;
-    transition: 0.5s;
-    margin-top: 10px;
-    border: 2px solid #2e2e2e;
-    width:170px;
-    height:70px;
-    color: #2e2e2e;
-    font-weight: bold;
-  }
-  
-  .more_clickHere:hover {
-    background: rgb(33, 33, 33, 0.7);
-    border: 2px solid rgb(33, 33, 33);
-    color: white
-  }
-
 
 
 
