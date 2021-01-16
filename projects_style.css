@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+*::selection{
+  background: rgba(62,224,208,0.7);
+}
+
 html {
   height: 100%;
 }

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    background: rgba(62,224,208,0.7);
+}
+
 main{
   background-color: #fafafa;
     background-color: #fafafa;

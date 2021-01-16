@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+*::selection{
+  background: rgba(62,224,208,0.7);
+}
+
 body{
   width: 100%;
   background: url("arch11.jpg") 

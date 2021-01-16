@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+*::selection{
+    background: rgba(62,224,208,0.7);
+}
+
 .form{
     height:100%;
     width:100%;

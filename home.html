@@ -34,7 +34,7 @@
 
 
                 // If it's nighttime, go dark mode
-                if (!(now > 9 && now < 20)) {
+                if (!(now > 8 && now < 18)) {
                     aboutSection.classList.add('night');
                     aboutCard[0].classList.add('night');    // add class to the first card
                     aboutCard[1].classList.add('night');    // add class to the second card
@@ -48,6 +48,12 @@
             };
 
             adjustColorMode();
+
+            // Check again every 10 minutes
+            setInterval(function () {
+                now = new Date().getHours();
+                adjustColorMode();
+            }, 1000 * 60 * 10);
         });
     </script>
 
@@ -115,7 +121,7 @@
         <section class="hero hero-container">
             <div class="hero-content">
                 <h1 class="title">Make sure you are recognized!</h1>
-                <p class="message">“Architecture should speak of its time and place, but yearn for timelessness.”</p>
+                <p class="message">&quot;Architecture should speak of its time and place, but yearn for timelessness.&quot;</p>
                 <a href="#home-about" class="more-btn">Get to know us</a>
             </div>
 
@@ -149,9 +155,10 @@
                 <div class="about-contentBox">
                     <div class="about-content">
                         <h1>About Us</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam distinctio eos commodi sequi
-                            perspiciatis nobis!</p>
-                        <a href="#">Read more</a>
+                        <p>Selene Architecture is an innovative, design-driven group invested in pushing creativity,
+                            collaboration and construction to deliver unique buildings that inspire through form and
+                            delight through function.</p>
+                        <a href="about_us.html">Read more</a>
                     </div>
                 </div>
             </div>
@@ -215,7 +222,7 @@
                             <i class="fa fa-twitter"></i>
                         </a>
                         <br />
-                        <span id="already-picked">(Come back tomorrow to pick another one!)</span>
+                        <span id="already-picked">(Come back tomorrow to pick another one&excl;)</span>
                     </div>
                 </div>
             </div>
@@ -229,7 +236,9 @@
                 </div>
                 <div class="arch-content">
                     <h2>Eliza Hoxha</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cumque rem.</p>
+                    <p style="font-size: 12px;">A strong believer in the ability of the architecture and research
+                        combined with design thinking, for strengthening our societies and having a positive effect on
+                        the world.</p>
                 </div>
             </div>
 
@@ -245,7 +254,7 @@
                 </div>
                 <div class="arch-content">
                     <h2>Elsa Koshi</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, cumque rem.</p>
+                    <p style="font-size: 12px;"> Young and highly creative architect. Has good communication skills and is known for dealing very well with clients.</p>
                 </div>
             </div>
         </div>
@@ -293,7 +302,7 @@
             </div>
             <!-- Slider End -->
             <div class="slider-btn">
-                <a href="#">
+                <a href="projects.html">
                     <button class="projects-btn">More Projects</button>
                 </a>
             </div>
@@ -308,7 +317,7 @@
         H I C A T E C R T -->
 
         <section class="home-game">
-            <h2>Did you get tired scrolling?</h2>
+            <h2>Did you get tired scrolling&quest;</h2>
             <button id="play-btn">Let's play a game</button>
 
             <div class="game-content">
@@ -347,12 +356,15 @@
             <div class="footer-logo-container">
                 <img src="images/selene_logo.png" id="f-logo" alt="logo" />
             </div>
-            <p>We collaborate with ambitious brands and people; let's build something great together.</p>
+            <address><p>UP - Faculty of Electrical and Computer Engineering,</br>
+                Bregu i Diellit, p.n.
+                10000, Prishtin&euml;,
+                Republic of Kosovo</p></address>
             <ul class="socials">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://myaccount.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/ArchiDesiign" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/archidesiign?lang=gl" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://myaccount.google.com/profile"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=_C5vCGB8Xx0" target="_blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
             <p>Copyright &copy;2020 SELENE</p>
         </div>

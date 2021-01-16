@@ -3,6 +3,11 @@
   font-family: Fonti;
   src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 }
+
+*::selection{
+  background: rgba(62,224,208,0.7);
+}
+
 html,body{
     background-color:black; /*nuk pershtatet me grid*/
     box-sizing:border-box ;
