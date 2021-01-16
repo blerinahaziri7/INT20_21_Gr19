@@ -61,16 +61,16 @@
           <h4 class="h4" align="center">We would love to hear from you. Please complete this form:</h4>
       </header>
     
-      <form action="https://www.google.com/" method="GET">
+      <form  method="GET">
           <div class="form1">
                   <label for="fname">Full Name<span>*</span></label>
-                  <input type="text" id="fname" name="fullname" placeholder="Required" required onkeydown="validation2()">
+                  <input type="text" id="fname" name="fullname" placeholder="Required" required onkeydown="validation2()" autocomplete="off">
                   <span id="text3"></span> </br> 
                   <label for="email">Email<span>*</span></label>
-                  <input type="text" id="email" name="email" placeholder="Required" required onkeydown="validation()" >
+                  <input type="text" id="email" name="email" placeholder="Required" required onkeydown="validation()" autocomplete="off" >
                   <span id="text1"></span> </br>
                   <label for="phonenumber"> Mobile<span>*</span></label>
-                  <input type="text" id="phonenumber" name="phonenumber" required value="+383" onkeydown="validation1()">
+                  <input type="text" id="phonenumber" name="phonenumber" required value="+383" onkeydown="validation1()" autocomplete="off">
                   <span id="text2"></span> </br>
                   <label for="proffession"> Proffession <span>*</span> </label>
                   <select id="proffession"name="proffession">
@@ -125,7 +125,7 @@
           </div>
 
           <div class="form3">       
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Submit" onclick="Alert()" >
                   <input type="reset" value="Reset">
                   <a class="link_id" href="#entry"> <mark> Click here to start again!</mark> </a>
           </div>
@@ -152,5 +152,14 @@
             <p>Copyright &copy;2020 SELENE</p>
         </div>
     </footer>
+    <script>
+      function Alert(){
+        var x=78;
+        var y=21;
+        if(x>y){
+          alert("Thank you for choosing us!");
+        }
+      }
+    </script>
   </body>
 </html>

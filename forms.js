@@ -106,7 +106,7 @@ function Validation1(){
     else {
       form.classList.remove("valid");
       form.classList.add("invalid");
-      text.innerHTML="Please enter a valid password";
+      text.innerHTML="Password must contain at least 8 characters,one uppercase letter one digit and one special character";
       text.style.color= "red";
 }
 }
@@ -175,7 +175,7 @@ function Validation4(){
     else {
       form.classList.remove("valid");
       form.classList.add("invalid");
-      text4.innerHTML="Please enter a valid password";
+      text4.innerHTML="Password must contain at least 8 characters,one uppercase letter one digit and one special character";
       text4.style.color= "red";
 }
 }
