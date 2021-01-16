@@ -14,6 +14,7 @@ toTopButton.addEventListener("click", function(){
     window.scrollTo(0,0); // scroll back to the top
 })
 
+
 /*---------------------Our Statistics------------------ */
 const stats = document.querySelectorAll(".statistics");
 const countBtn = document.getElementById("count-btn");

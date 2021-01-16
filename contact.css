@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 *::selection{
@@ -174,4 +175,43 @@ input:focus .input{
 .btn:hover {
   outline: 3px solid white;
   outline-offset: -8px;
+}
+
+input[type=text]::placeholder { 
+  color: rgb(7, 6, 6);
+}
+
+textarea::placeholder { 
+  color: rgb(7, 6, 6);
+}
+
+/*-------------------------- Back to top button -----------------------*/
+#to-top-btn{
+  display: inline-block;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  color: rgb(32, 32, 32);
+  cursor: pointer;
+  outline: none;
+  border: 3px solid rgb(32,32,32);
+  border-radius: 1px;
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 30;
+}
+
+#to-top-btn:hover,  #to-top-btn:focus{
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+#to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
 }
