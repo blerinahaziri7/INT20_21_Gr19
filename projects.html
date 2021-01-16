@@ -8,32 +8,9 @@
     <link rel="stylesheet" type="text/css" href="projects_style.css">
     <link rel="icon" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="projects.js"></script>
 
-    <!-- Inline JavaScript to change Background Color on timer -->
-    <script>
-        var i = 0;
-        function changeBgColor() {
-            var colorPalette = ["rgba(0, 0, 0, 0.05)", "rgba(0, 0, 0, 0.15)",
-            "rgba(0, 0, 0, 0.25)", "rgba(0, 0, 0, 0.35)"];
-            var divToChange = document.getElementById("hotel-sliders");
-            divToChange.style.backgroundColor = colorPalette[i];
-
-            if (i == 0) {
-                order = "ascending";
-            }
-            else if (i == (colorPalette.length - 1)) {
-                order = "descending";
-            }
-
-            switch(order) {
-                case "ascending": i++;
-                break;
-                case "descending": i--;
-                break;
-            }
-        }
-        setInterval(changeBgColor, 2000);
-    </script>
 </head>
 
 <body>
@@ -105,7 +82,7 @@
             </ul>
         </div>
         <div>  
-            <a href="#">
+            <a href="L.D(CV).html">
                 <button class="about-archs-btn" style="margin-left: 25px;">
                     About Architect
                 </button>
@@ -161,7 +138,7 @@
             </ul>
         </div>
         <div>  
-            <a href="#">
+            <a href="B.M(CV).html">
                 <button class="about-archs-btn" style="margin-left: 63%;">
                     About Architect
                 </button>
@@ -216,7 +193,7 @@
             </ul>
         </div>
         <div>  
-            <a href="#">
+            <a href="cv.html">
                 <button class="about-archs-btn" style="margin-left: 25px;">
                     About Architect
                 </button>
@@ -270,7 +247,7 @@
             </ul>
         </div>
         <div>  
-            <a href="#">
+            <a href="E.H(CV).html">
                 <button class="about-archs-btn" style="margin-left: 63%;">
                     About Architect
                 </button>
@@ -482,13 +459,35 @@
                 </dl>
             </div>
             <div>
-                <a href="#">
+                <a href="cv2.html">
                     <button class="about-archs-btn h-btn">
                         About Architect
                     </button>
                 </a>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="hidden-buttons-section">
+    <div id="watch-again-btn-container">
+        <button id="main-btn" class="w-a-btns">Watch Projects Again</button>
+    </div>
+
+    <div id="hidden-div" class="hidden">
+        <button class="hidden hidden-btn w-a-btns" id="first-hidden-btn"><a href="#first-project-section" style="color:black">First Project</a></button>
+        <button class="hidden hidden-btn w-a-btns" id="second-hidden-btn">
+            <a href="#second-project-section" style="color:black">
+                Second Project</a></button>
+        <button class="hidden hidden-btn w-a-btns" id="third-hidden-btn">
+            <a href="#third-project-section" style="color:black">
+                Third Project</a></button>
+        <button class="hidden hidden-btn w-a-btns" id="fourth-hidden-btn">
+            <a href="#fourth-project-section" style="color:black">
+                Fourth Project</a></button>
+        <button class="hidden hidden-btn w-a-btns" id="fifth-hidden-btn">
+            <a href="#hotel-section" id="link-to-get" style="color:black">
+                Fifth Project</a></button>
     </div>
 </section>
 
@@ -501,10 +500,10 @@
             </div>
             <p>We collaborate with ambitious brands and people; let's build something great together.</p>
             <ul class="socials">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://myaccount.google.com/"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
             </ul>
             <p>Copyright &copy;2020 SELENE</p>
         </div>

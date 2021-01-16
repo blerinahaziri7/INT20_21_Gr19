@@ -510,6 +510,48 @@ dd{
 }
 /* Hotel CSS End */
 
+#hidden-buttons-section{
+  background-color: rgb(138, 138, 138);
+}
+
+#watch-again-btn-container{
+  background-color: rgb(68, 68, 68);
+  height: 110px;
+  display: flex; 
+  justify-content: center;
+}
+
+#hidden-div{
+  background-color: rgb(68, 68, 68);
+  height: 100px;
+  width: 100% 
+}
+
+.w-a-btns{
+  background-color: rgb(214, 212, 212);
+  border: black double 5px;
+  border-radius: 12px;
+  font-size: 25px;
+  text-align: center;
+  outline: 0;
+  cursor: pointer;
+  height: 60px;
+}
+
+#main-btn{
+  position: relative;
+  width: 280px;
+  margin-top: 20px;
+}
+
+.hidden-btn{
+  margin-top: 20px;
+  margin-left: 85px;
+  width: 200px;
+  color: black;
+}
+/* Watch Again CSS End */
+
 footer{
   background: black;
   height: 300px;
