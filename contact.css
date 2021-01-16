@@ -10,6 +10,7 @@ body{
   width: 100%;
   background: url("arch11.jpg") 
   no-repeat center center fixed; 
+  font-family: 'Ubuntu', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,8 +21,8 @@ body{
 
 
 .contact-us{
-  width: 350px;
-  background: #fff;
+  width: 450px;
+  background: rgba(255, 255, 255, 0.507);
   padding: 50px;
   margin: 100px auto;
   border-radius: 30px;
@@ -29,7 +30,7 @@ body{
 }
 
 .title h1{
-  color: #535274;
+  color: #16161f;
   letter-spacing: 5px;
   margin-bottom: 25px;
   text-align: center;
@@ -67,7 +68,7 @@ input:focus .input{
 }
 
 .btn{
-  background: #827ffe;
+  background: #121216;
   text-align: center;
   color: #fff;
   padding: 12px;
@@ -134,16 +135,20 @@ input:focus .input{
 
 
 .title2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-shadow: 2px 2px  #dedee2;
-  color: #535274;
+  color: #16151b;
   letter-spacing: 5px;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .button2 {
-
-  background: #827ffe;
+  width: 500px;
+  background: #141416;
   text-align: center;
   
   padding: 12px;
@@ -151,4 +156,17 @@ input:focus .input{
   cursor: pointer;
   box-shadow: 0 3px 6px 0 rgba(34, 31, 31, 0.4);
   transition: 0.2s;
+}
+
+.btn {
+
+  text-decoration: none;
+  padding: 1em 3em;
+  color: white;
+  transition: all ease-in-out 300ms;
+}
+
+.btn:hover {
+  outline: 3px solid white;
+  outline-offset: -8px;
 }
