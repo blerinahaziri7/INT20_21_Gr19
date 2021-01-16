@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Contact Us</title>
 	<link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://kit.fontawesome.com/92572388a0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -76,7 +76,7 @@
   </div>
 
   <div class="btn" onclick="ErrorHandling()">
-    <button type="submit"  style="padding: 12px; width: 180px; height: 35px ;border-radius: 25px; border: none; background-color: transparent; color: white;
+    <button type="submit"  style="padding: 12px; width: 180px; height: 35px ;border-radius: 25px; cursor: pointer; border: none; background-color: transparent; color: white;
     letter-spacing: 5px;">Write email</button> 
     <i class="fas fa-arrow-right"></i>
   </div>
@@ -102,16 +102,20 @@
 
   
 
-
 <div class="title2">
-  <h2>Use Geolocation to find Selena office</h2> 
-</div>
-        <div class="button2" style="padding-left: 0px; border: none;">
-          <button onclick="getlocation();" style="padding: 12px; width: 1880px; height: 35px ;border-radius: 25px; border: none; background-color: transparent; color: white;
-          letter-spacing: 5px;"> Find location</button> 
+  <h2>Use Geolocation to find Selene office</h2> 
+          
+        <div class="button2" style="padding-left: 0px; border: none; margin-top: 20px;"> 
+          
+          <button onclick="getlocation();" style="padding: 12px; width: 100%; height: 35px ;border-radius: 25px; border: none; background-color: transparent; color: white;
+          letter-spacing: 5px; cursor: pointer; outline:0;"> Find location</button> 
         </div>
-        <div id="demo" style="width: 1880px; height: 400px; margin-left: 10px;  "></div> 
+      </div> 
+
        
+        <div id="demo" style="width: 100% ; height: 400px;"></div> 
+
+     
         <script src="https://maps.google.com/maps/api/js?sensor=false"> </script> 
         
         <script type="text/javascript"> 
