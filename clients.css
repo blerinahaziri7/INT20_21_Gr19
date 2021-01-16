@@ -50,7 +50,7 @@
      
    }
 
-   #description_arch{
+   .description_arch{
      font-size: 10px;
      color:white;
     
@@ -87,6 +87,7 @@
     text-align: center;
 
    }
+   /*
    #clientsId  .a1 .architect1:hover{
       width: 300px;
       height: 300px;
@@ -164,12 +165,15 @@
   position: relative;
   margin: auto;
   background-image: url(images/elsa_koshi.jpg);
-}
+}*/
 
 .nav_links li a:hover {
   color: #fdc835 ;
 }
 
+p{
+  color:white;
+}
 
  
    
