@@ -1,415 +1,471 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');*/
 @font-face {
-    font-family: Fonti;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-  }
-  html,body{
-      background-color:black; /*nuk pershtatet me grid*/
-      box-sizing:border-box ;
-      font-family: Fonti, sans;
-  }
-  .center {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-  }
+  font-family: Fonti;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+}
+html,body{
+    background-color:black; /*nuk pershtatet me grid*/
+    box-sizing:border-box ;
+    font-family: Fonti, sans;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/*fillimi per vetine grid*/
+
   
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+p {
+  font-size: 20px;
   
-  /*fillimi per vetine grid*/
-  
-    
-  h2 {
-    font-size: 45px;
-    font-weight: 300;
-    margin: 10px;
-  }
-  
-  p {
-    font-size: 20px;
-    
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    border:solid black 2px;
-  }
-  
-  .container > div {
-    cursor: pointer;
-    height: 210px;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  
-    transition: all 0.5s ease-out;
-  }
-  
-  .container > div:hover {
-    opacity: 0.4;
-    transform: scale(0.98);
-  }
-  .arkitektet {
-  background: url("https://img.freepik.com/free-photo/abstract-glass-window-roof-architecture-exterior_74190-6357.jpg?size=626&ext=jpg");
-  }
-  .projektet {
-  background: url("https://i.ytimg.com/vi/p5hgXck7KP0/maxresdefault.jpg");
-  }
-  .students {
-  background: url("https://i.pinimg.com/originals/f3/d5/39/f3d5399534fdbd3cea2810f2f9d3de3a.jpg");
-  }
-  
-  /*About us*/
-  
-   .about-section {
-     background: url(foto.jpg) no-repeat left;
-     background-size: 55%;
-     background-color: #A58961; /*qeta ndodhe qe duhet me ndrru*/
-     overflow: hidden;
-     padding:100px 0;
-   }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  border:solid black 2px;
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-out;
+}
+
+.container > div:hover {
+  opacity: 0.4;
+  transform: scale(0.98);
+}
+.arkitektet {
+background: url("https://img.freepik.com/free-photo/abstract-glass-window-roof-architecture-exterior_74190-6357.jpg?size=626&ext=jpg");
+}
+.projektet {
+background: url("https://i.ytimg.com/vi/p5hgXck7KP0/maxresdefault.jpg");
+}
+.students {
+background: url("https://i.pinimg.com/originals/f3/d5/39/f3d5399534fdbd3cea2810f2f9d3de3a.jpg");
+}
+
+/*About us*/
+
+ .about-section {
+   background: url(foto.jpg) no-repeat left;
+   background-size: 55%;
+   background-color: #A58961; /*qeta ndodhe qe duhet me ndrru*/
+   overflow: hidden;
+   padding:50px 0;
+ }
+ 
+ .inner-container{
+   background: url(logo.svg) no-repeat;
+   width:55%;
+   float:right;
+   background-color: #f5ebe0;
+   padding:100px;
    
-   .inner-container{
-     background: url(logo.svg) no-repeat;
-     width:55%;
-     float:right;
-     background-color: #f5ebe0;
-     padding:150px;
-  
-   }
-   
-   .inner-container h1 {
-     margin-bottom: 30px;
-     font-size: 30px;
-     font-weight:900;
-  
-   }
-   .text{
-     font-size:13px;
-     color:#A58961;
-     line-height:30px;
-     text-align: center;
-     margin-bottom: 40px;
-     /*per wrap*/
-     width:90%;
-     word-break: break-word;
-   }
-   .skills{
-     display:block;
-     justify-content: space-between0;
-     font-weight: 700;
-     font-size:13px;
-   }
-  
-  /*ajo pjesa ne fillim*/
-  section {
-    position:relative;
-    width:100%;
-    padding:0 50px 50px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-   /* background-color: red;*/
-  }
-  .content
-  {
-    position:relative;
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .content .textBox {
+
+ }
+ 
+ .inner-container h1 {
+   margin-bottom: 30px;
+   font-size: 30px;
+   font-weight:900;
+   text-align: center;  
+ }
+ .text{
+   font-size:20px;
+   color:#53505A;
+   line-height:30px;
+   text-align: center;
+   margin-bottom: 40px;
+   /*per wrap*/
+   width:90%;
+   word-break: break-word;
+ }
+ .skills{
+   display:block;
+   justify-content: space-between0;
+   font-weight: 700;
+   font-size:13px;
+ }
+
+/*ajo pjesa ne fillim*/
+.section_s {
   position:relative;
-  max-width:600px;
-  }
-  .content .textBox h2 {
+  width:100%;
+  padding:0 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
-  color: white;
-      font-size: 4em;
-      line-height: 1.4em;
-      font-weight: 500;
-  }
-  
-  .content .textBox h2 span {
+ /* background-color: red;*/
+} 
+.content
+{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+position:relative;
+max-width:600px;
+}
+.content .textBox h2 {
+
+color: white;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: #53505A;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.content .textBox p {
+  color: #F5EBE0;
+  /*per padding*/
+  padding-right: 10px;
+}
+.content .textBox a {
+  background: #A58961;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    /* background: white; */
     color: #53505A;
-    font-size: 1.2em;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-  .content .textBox p {
-    color: #F5EBE0;
-    /*per padding*/
-    padding-right: 10px;
-  }
-  .content .textBox a {
-    background: #A58961;
-      display: inline-block;
-      margin-top: 20px;
-      padding: 8px 20px;
-      /* background: white; */
-      color: #53505A;
-      border-radius: 40px;
-      font-weight: 500;
-      letter-spacing: 1px;
-      text-decoration: none;
-  }
-  /*Gradienti*/
-  .content .textBox a:hover{
-    background: radial-gradient(circle, #A58961, white)
-  }
-  .content .imgBox {
-    width:600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
-   
-  
-  }
-  .content .imgBox img {
-  max-width:400px;
-  
-  }
-  .fotot 
-  {
-    position:absolute;
-    left:50%;
-    bottom:20px;
-    transform: translateX(-50%);
-    display:flex;
-  
-  }
-  .fotot li
-  {
-    list-style:none;
-    display:inline-block;
-    margin:0 20px;
-    cursor:pointer;
-  }
-  .fotot li:hover {
-    transform: translateY(-15px);
-  }
-  .fotot li img {
-     max-width:60px;
-  }
-  .rrumbullaksimi
-  {
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 50%;
-      height: 50%;
-      /*background: #A58961;*/
-      
-      border: double #53505A 5px;
-      background: linear-gradient(45deg, #A58961, #F5EBE0);
-  }
-  .fotoja {
-    background: url(shpia.svg);
-      background-size: 90px;
-      background-repeat: repeat-x;
-      background-origin:border-box ;
-      margin-top: 40px;
-      margin-bottom: 30px;
-      padding: 1.5em;
-      color: white;
-      /* border: solid red; */
-      padding-bottom: -100px;
-  }
-  /*Ndryshimi te pjesa adress per footer*/
-  .footer-c{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .footer-c p {
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-  }
-  
-  /*Per our team*/
-  
-  .heading_a {
-    text-align:center;
-    font-size:50px;
-    margin:0px;
-    padding:0px;
-  }
-  .image-container_a {
-    display:flex;
-    justify-content:center ;
-    align-items: center;
-  }
-  .image_a
-  {
-    width:120px;
-    height:120px;
-    background: grey;
-    margin:2px 50px;
-    border-radius: 50%;
-    border: 3px solid black;
-    display:flex;
-    justify-content:center ;
-    align-items: center;
-  }
-  .image_a:hover{
-    border: 3px solid rgb(255, 238, 169);
-  
-  }
-  .image_a img {
-  /*width:116px;
-  height:116px;
-  border-radius: 50%;*/
-  width: 130px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: -20px;
-  
-  }
-  .info-container_a {
-  width:1100px;
-  height: 350px;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+/*Gradienti*/
+.content .textBox a:hover{
+  background: radial-gradient(circle, #A58961, white)
+}
+.content .imgBox {
+  width:600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+ 
+
+}
+.content .imgBox img {
+max-width:400px;
+
+}
+.fotot 
+{
+  position:absolute;
+  left:50%;
+  bottom:20px;
+  transform: translateX(-50%);
+  display:flex;
+
+}
+.fotot li
+{
+  list-style:none;
+  display:inline-block;
+  margin:0 20px;
+  cursor:pointer;
+}
+.fotot li:hover {
+  transform: translateY(-15px);
+}
+.fotot li img {
+   max-width:60px;
+}
+.rrumbullaksimi
+{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    /*background: #A58961;*/
+    
+    border: double #53505A 5px;
+    background: linear-gradient(45deg, #A58961, #F5EBE0);
+}
+.fotoja {
+  background: url(shpia.svg);
+    background-size: 90px;
+    background-repeat: repeat-x;
+    background-origin:border-box ;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    padding: 1.5em;
+    color: white;
+    /* border: solid red; */
+    padding-bottom: -100px;
+}
+/*Ndryshimi te pjesa adress per footer*/
+.footer-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-c p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+}
+
+/*Per our team*/
+
+.heading_a {
+  text-align:center;
+  font-size:50px;
+  margin:0px;
+  padding:0px;
+}
+.image-container_a {
   display:flex;
   justify-content:center ;
   align-items: center;
-  background: white;
-  margin:0 auto;
-  margin-top: 50px;
-  border-radius: 5px;
-  } 
-  .profile_a {
-    /*widows: 700px;
-    height:400px;
-    border-radius:15px;
-    padding:10px;
-    margin:0px;
-    height: 400px;*/
-  
-    /*widows: 700px;
-    height: 400px;*/
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 0;
-    margin: 0px;
-    height: 370px;
-  }
-  .name_a {
-    margin-top: 80px;
-    padding: 0px 15px;
-    text-align: left;
-    line-height: 20px;
-    font-size: 50px;
-  }
-  .status_a {
-    padding: 0px 20px;
-    text-align: left;
-    line-height: 50px;
-    margin:0;
-  }
-  .about_a {
-    height: 240px;
-    padding: 0px 20px;
-  
-  }
-  
-  /*Per pjesen te architecture*/
-  .container_t {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0 3rem;
-  }
-  
-  .container_t h1, h2 {
-    font-weight: 200;
-    margin: 0.4rem;
-  }
-  
+}
+.image_a
+{
+  width:120px;
+  height:120px;
+  background: #A58961;
+  margin:2px 50px;
+  border-radius: 50%;
+  border: 3px solid black;
+  display:flex;
+  justify-content:center ;
+  align-items: center;
+}
+.image_a:hover{
+  border: 3px solid rgb(255, 238, 169);
+
+}
+.image_a img {
+/*width:116px;
+height:116px;
+border-radius: 50%;*/
+width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: -20px;
+
+}
+.info-container_a {
+width:1100px;
+height: 350px;
+display:flex;
+justify-content:center ;
+align-items: center;
+background: white;
+margin:0 auto;
+margin-top: 50px;
+border-radius: 5px;
+} 
+.profile_a {
+  /*widows: 700px;
+  height:400px;
+  border-radius:15px;
+  padding:10px;
+  margin:0px;
+  height: 400px;*/
+
+  /*widows: 700px;
+  height: 400px;*/
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 0;
+  margin: 0px;
+  height: 370px;
+}
+.name_a {
+  margin-top: 80px;
+  padding: 0px 15px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 50px;
+}
+.status_a {
+  padding: 0px 20px;
+  text-align: left;
+  line-height: 50px;
+  margin:0;
+}
+.about_a {
+  height: 240px;
+  padding: 0px 20px;
+
+}
+
+/*Per pjesen te architecture*/
+.container_t {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.container_t h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+.container_t h1 {
+  font-size: 3.5rem;
+  color:white;
+}
+
+.container_t h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid white;
+}
+
+@media(min-width: 1200px) {
   .container_t h1 {
-    font-size: 3.5rem;
-    color:white;
+    font-size: 5rem;
   }
-  
+}
+
+@media(max-width: 800px) {
+  .container_t {
+    padding: 0 1rem;
+  }
+
+  .container_t h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .container_t h1 {
+    font-size: 2.5rem;
+  }
+
   .container_t h2 {
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
   }
+}
+
+/*per kohe*/
+.blerina {
   
-  /* Cursor */
-  .txt-type > .txt {
-    border-right: 0.2rem solid white;
-  }
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   
-  @media(min-width: 1200px) {
-    .container_t h1 {
-      font-size: 5rem;
-    }
-  }
-  
-  @media(max-width: 800px) {
-    .container_t {
-      padding: 0 1rem;
-    }
-  
-    .container_t h1 {
-      font-size: 3rem;
-    }
-  }
-  
-  @media(max-width: 500px) {
-    .container_t h1 {
-      font-size: 2.5rem;
-    }
-  
-    .container_t h2 {
-      font-size: 1.5rem;
-    }
-  }
-  
-  /*per kohe*/
-  .blerina {
-    
-    margin: 0;
-    padding: 0;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    color: white;
-  }
-  
+  color: white;
+  background-size: 600px;
+}
+
+#time {
+  font-size: 20px;
+  border:double 1px #A58961;
+  padding: 5px;
+  color: #F5EBE0;
+  margin-top:40px;
+  float: right;
+  margin-right: 30px;
+}
+
+
+.blerina h1 {
+  font-size: 20px;
+  border-bottom:double #A58961;
+  border-top: double #A58961;
+  color:#F5EBE0;
+  padding: 5px;
+}
+
+.blerina h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
   #time {
-    font-size: 8rem;
+    font-size: 6rem;
   }
-  
-  .blerina h1 {
-    margin-bottom: 3rem;
-  }
-  
-  .blerina h2 {
-    margin-bottom: 0.5rem;
-    opacity: 0.6;
-  }
-  
-  @media (max-width: 700px) {
-    #time {
-      font-size: 6rem;
-    }
-  }
-  
+}
+.image-container_a {
+  margin-top: 20px;
+}
+
+/*Per forme*/
+.comentBox {
+  padding: 1%;
+  width:96%;
+  border:1px solid #000;
+  background-color: #f0f0f0;
+  margin-bottom:10px;
+}
+.leftPaneImg{
+  width:10%;
+float:left;
+}
+.leftPaneImg img{
+  border-radius:100%;
+}
+.rightPanel {
+  width: 85%;
+  float: right;
+  display: inline;
+  margin-left: 1%;
+  padding: 0px;
+  margin-top: -80px;
+}
+.clear {
+  clear:both;
+}
+.form {
+  padding:10px;
+  border:5px solid #A58961;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form input[type="text"],.form textarea,.form input[type="date"] {
+border:3px solid #A58961;
+padding:2px;
+width:300px;
+}
+.form h5{
+  text-align: center;
+}
+
+
