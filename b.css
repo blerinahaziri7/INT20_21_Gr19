@@ -1,13 +1,14 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');*/
 @font-face {
   font-family: Fonti;
-  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 }
 html,body{
     background-color:black; /*nuk pershtatet me grid*/
     box-sizing:border-box ;
-    font-family: Fonti, sans;
+    font-family: "Poppins", sans-serif;
 }
+
 .center {
     margin-left: auto;
     margin-right: auto;
