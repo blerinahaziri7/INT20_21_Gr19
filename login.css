@@ -102,13 +102,15 @@
 .check-box{
     margin: 30px 10px 30px 0;
 }
- span{
-     color:#777;
-     font-size: 12px;
-     bottom: 68px;
-     position: absolute;
- }
+/* // kqyre */
 
+p{
+    color:#777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    margin-left: 30px;
+}
  #login{
      left:50px;
 
